@@ -40,17 +40,24 @@ class Transcriber:
 
     async def receiver(self, ws):
         """Receive transcription results from Deepgram."""
+        full_transcript = ""  # Initialize an empty string to hold the full transcript
         try:
             async for msg in ws:
                 res = json.loads(msg)
-                if res.get("is_final"):
-                    transcript = (
-                        res.get("channel", {})
-                        .get("alternatives", [{}])[0]
-                        .get("transcript", "")
-                    )
-                    if transcript.strip():
-                        return transcript
+                print(res)
+                # Extract transcript from the current message
+                transcript = (
+                    res.get("channel", {})
+                    .get("alternatives", [{}])[0]
+                    .get("transcript", "")
+                )
+                if transcript.strip():
+                    # Append the current transcript to the full transcript
+                    full_transcript += transcript + " "
+                if res.get("speech_final"):
+                    # If the message is marked as speech_final, return the full transcript
+                    if full_transcript.strip():
+                        return full_transcript.strip()
         except asyncio.TimeoutError:
             print("Timeout occurred in receiver coroutine.")
         except websockets.exceptions.ConnectionClosedError as e:
@@ -73,7 +80,7 @@ class Transcriber:
             await asyncio.sleep(check_interval)
 
     async def run(self, key):
-        deepgram_url = f"wss://api.deepgram.com/v1/listen?punctuate=true&encoding=linear16&sample_rate=16000"
+        deepgram_url = f"wss://api.deepgram.com/v1/listen?punctuate=true&encoding=linear16&sample_rate=16000&endpointing=200"
         
         # Open the microphone stream
         p = pyaudio.PyAudio()
