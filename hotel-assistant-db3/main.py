@@ -13,7 +13,7 @@ from playFiles import playAudioFile
 def chat_with_user():
     chat_history = []
     while True:
-        query = speech_to_text1.transcribe_stream()  # Captures spoken input from the user.
+        query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
         print('query:', query)
         
         category_filler = llama_get_category(query)  # Processes the query to categorize and determine the filler response.
