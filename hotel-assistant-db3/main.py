@@ -5,7 +5,7 @@ import json
 
 # csv2json.convert_csv_to_json('data1.csv')
 
-import speech_to_text1
+import speech_to_text
 import part2
 from async_llama2 import llama_get_category
 from playFiles import playAudioFile
