@@ -38,28 +38,6 @@ class Transcriber:
         finally:
             self.stop_pushing = True
 
-    # async def receiver(self, ws):
-    #     """Receive transcription results from Deepgram."""
-    #     try:
-    #         async for msg in ws:
-    #             res = json.loads(msg)
-    #             print(res)
-    #             if res.get("speech_final"):
-    #             # if res.get("is_final"):
-    #                 transcript = (
-    #                     res.get("channel", {})
-    #                     .get("alternatives", [{}])[0]
-    #                     .get("transcript", "")
-    #                 )
-    #                 if transcript.strip():
-    #                     return transcript
-    #     except asyncio.TimeoutError:
-    #         print("Timeout occurred in receiver coroutine.")
-    #     except websockets.exceptions.ConnectionClosedError as e:
-    #         print(f"WebSocket connection closed unexpectedly in receiver: {e}")
-    #     finally:
-    #         if ws.open:
-    #             await ws.close()
 
     async def receiver(self, ws):
         """Receive transcription results from Deepgram."""
@@ -151,17 +129,3 @@ def transcribe_stream():
     return transcript
 
 
-# import asyncio
-
-# async def transcribe_stream():
-#     DEEPGRAM_API_KEY = os.getenv('DEEPGRAM_API_KEY')
-#     if DEEPGRAM_API_KEY is None:
-#         print("Please set the DEEPGRAM_API_KEY environment variable.")
-#         return
-
-#     print("Start speaking...")
-#     transcriber = Transcriber()
-    
-#     # Directly await the transcriber's run method instead of using run_until_complete
-#     transcript = await transcriber.run(DEEPGRAM_API_KEY)
-#     return transcript
