@@ -1,7 +1,7 @@
 import sys
 sys.path.append('./components')
 import json
-import speech_to_text1
+import speech_to_text
 import part2
 from async_llama2 import llama_get_category
 from playFiles import playAudioFile
@@ -14,7 +14,7 @@ import time
 def chat_with_user():
     chat_history = []
     while True:
-        query = speech_to_text1.transcribe_stream()  # Captures spoken input from the user.
+        query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
         print('query:', query)
         
         category_filler = llama_get_category(query)  # Processes the query to categorize and determine the filler response.
