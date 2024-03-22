@@ -48,18 +48,6 @@ def get_category(query, system_message):
     return [], content
 
 
-# prompt1 = """You are Jacob, a Hotel receptionist who provides responses to customer queries. Please keep your response short and use real talk sentences.
-#     Respond with a Question category in JSON format {"category":"<>", "Sub Category": "<>", "QuestionType": "<FAQ/DB>"}. 
-#     Values for "category" can be Account Specific or General Inquiry.
-#     General Inquiry questions include "What is your name?", "Is this the Grand Holiday Hotel?", "Do you have room service?", "Do you have Wi-Fi?", "What's the checkout time?" and are typically FAQ type.
-#     Account Specific questions include subcategories: Room Booking, Billing, Refunds, Feedback, Booking, Services and may vary between FAQ and DB type depending on the specificity of the query.
-#     FAQ type questions do not require database access and are general. DB type questions require specific information from the database, such as room availability or pricing.
-#     Always respond with the following JSON format {"Category": "<category>", "Sub Category": "<subCategory>", "QuestionType": "<FAQ/DB>"}"""
-
-
-# Respond in JSON format {"Category":"<>", "Sub Category": "<>", "General Talk": "Yes/No"}. 
-#     Do not leave any field empty.
-
 prompt1 = """You are Jacob, a Hotel receptionist who provides responses to customer queries.
     Your task is to match the User query with the most suitable category, sub category from the given table.
       
