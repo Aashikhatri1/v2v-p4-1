@@ -1,0 +1,533 @@
+[
+    {
+        "Category": "Room",
+        "Sub Category": "Availability",
+        "Sub Sub Category": "Booking",
+        "Question type": "Database",
+        "Information Required From Client": "Number of Guests,Check-out date\n",
+        "Question": "Can you check if there are any rooms available for 15 March?",
+        "Sample Answer": "I've checked our availability for {Date}, and I'm pleased to inform you that we do have rooms available for that date. If you'd like to proceed with booking, please let me know, and I'll be happy to assist you further."
+    },
+    {
+        "Category": "Customer Account",
+        "Sub Category": "Payment/offer",
+        "Sub Sub Category": "Invoice",
+        "Question type": "Database",
+        "Information Required From Client": "Guest Identification,Time Frame,Email Address",
+        "Question": "Can you send the invoice for my last stay to my email?",
+        "Sample Answer": "To send an invoice to your email, we'll need to confirm your booking details. Please provide your room number or phone number and dates of stay."
+    },
+    {
+        "Category": "Customer Account",
+        "Sub Category": "Payment/offer",
+        "Sub Sub Category": "Stay charges",
+        "Question type": "Database",
+        "Information Required From Client": "Booking Information",
+        "Question": "How can I review the charges made to my room during my stay?",
+        "Sample Answer": "To review detailed billing information, please provide your phone number and the name your room was booked under."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Cancel/Refund",
+        "Sub Sub Category": "Cancellation",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Can I cancel my booking?",
+        "Sample Answer": "Yes, booking cancellation is allowed 24-48 hours before check-in. Please inform us within this time frame if you wish to cancel your booking."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Cancel/Refund",
+        "Sub Sub Category": "Refund",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Will I get full refund on my cancellation?",
+        "Sample Answer": "No, refunds will not be provided, and the rooms are non-refundable. Once booked, the reservation is considered final, and cancellations will not result in a refund."
+    },
+    {
+        "Category": "Customer Account",
+        "Sub Category": "Customer Account",
+        "Sub Sub Category": "Refund Status",
+        "Question type": "Database",
+        "Information Required From Client": "Booking Details\n",
+        "Question": "What's the status of my refund request for the canceled booking?",
+        "Sample Answer": "For refund status, we need your booking ID and the name under which the reservation was made to retrieve the information."
+    },
+    {
+        "Category": "Feedback",
+        "Sub Category": "Feedback",
+        "Sub Sub Category": "Complaint",
+        "Question type": "Database",
+        "Information Required From Client": "Booking Details,Specific Incident Details\n",
+        "Question": "How do I log a complaint about the room service I received?",
+        "Sample Answer": "To log a complaint, please provide us with your room number, the date of the incident, and a brief description of the issue."
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "Question type": "Database",
+        "Information Required From Client": "Reservation Details,New check-in date,New check-out date\n",
+        "Question": "I need to change the dates of my reservation. How can I do that?",
+        "Sample Answer": "To change your reservation dates, please provide your booking ID and the new dates you're requesting."
+    },
+    {
+        "Category": "Customer Account",
+        "Sub Category": "Customer Account",
+        "Sub Sub Category": "My reservations",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Why are all my future reservations not listed on my reservations list?",
+        "Sample Answer": "I'm sorry to hear about the trouble with your reservations not appearing on your list. \nThere could be several reasons for this discrepancy, such as technical issues, data synchronization delays, or discrepancies in the reservation process. \nTo address this promptly, I recommend reaching out to our customer support team with your account details and reservation information. They'll be able to investigate the matter thoroughly and provide you with a resolution."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Check In/Check Out",
+        "Sub Sub Category": "Check In/Check Out time",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What are the check-in and check-out times?",
+        "Sample Answer": "Check-in is at 1 PM, and check-out is at 11 AM. Early check-in or late check-out can be arranged based on availability."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Wi-Fi",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "How can I access the hotel Wi-Fi?",
+        "Sample Answer": "Wi-Fi is available throughout the hotel and is complimentary. To access the Wi-Fi, connect to 'HotelGuest' network and use the provided password. If no password was provided, you can use your phone number as the password."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Extra bed",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Can I request an extra bed or crib in my room?",
+        "Sample Answer": "We can provide an extra bed or crib upon request, subject to availability. There may be an additional charge for an extra bed."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Policy",
+        "Sub Sub Category": "Pets",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are pets allowed in the hotel?",
+        "Sample Answer": "Pets are welcome with prior notice and a fee of [insert fee] per stay. Please refer to our pet policy for details."
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "nearby attractions",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What are some must-see attractions nearby?",
+        "Sample Answer": "Our city has many attractions to offer. Our reception team can provide you with a map and recommendations."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Policy",
+        "Sub Sub Category": "Smoking",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What is the hotel's smoking policy?",
+        "Sample Answer": "Our hotel is entirely non-smoking. Smoking is permitted in designated outdoor areas only."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Check In/Check Out",
+        "Sub Sub Category": "early chcek-in",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Can I check in early if I arrive before the standard check-in time?",
+        "Sample Answer": "Early check-in is subject to availability. Please contact us in advance and we'll do our best to accommodate your request."
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "Booking",
+        "Question type": "Database",
+        "Information Required From Client": "Check-in and Check-out Dates,Number of Guests",
+        "Question": "What room types do you have available (e.g., single, double, suite)?",
+        "Sample Answer": "We offer a variety of room types to cater to different preferences and needs. Our available room types typically include: classic, executive, superior and suite room types."
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "Rates",
+        "Question type": "Database",
+        "Information Required From Client": "Dates of Stay,Number of Guests",
+        "Question": "What is the rate for Superior Room?",
+        "Sample Answer": "Currently, the rate for our Superior Room starts at (??rate) per night. However, rates may vary depending on factors such as the date of stay, length of stay, and any special promotions or discounts available."
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Payment/offer",
+        "Sub Sub Category": "Discounts",
+        "Question type": "Database",
+        "Information Required From Client": "Preferred Dates\n",
+        "Question": "Do you offer any special packages or discounts for [specific occasions]?",
+        "Sample Answer": "We offer special packages and discounts for specific occasions. Please inquire about the occasion you have in mind for more details."
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "How can I make a reservation?",
+        "Sample Answer": "You can make a reservation online through our website, or by calling our reservation desk at +91-11-64804425 or +91-11-68183700 or by emailing us at Palace.Delhi@tajhotels.com"
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Cancel/Refund",
+        "Sub Sub Category": "Cancellation",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What is your cancellation policy?",
+        "Sample Answer": "Our cancellation policy allows for free cancellation until 2 PM, three days prior to your scheduled arrival. Cancellations made after this time will incur a penalty equivalent to one night's charge, in addition to any applicable taxes and fees."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Parking",
+        "Sub Sub Category": "Parking",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you have onsite parking, and is there a fee?",
+        "Sample Answer": "Yes, we do offer onsite parking for our guests, and the best part is there is no fee for parking!"
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Transportation",
+        "Sub Sub Category": "cab service",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Is there cab service to/from the airport or other locations?",
+        "Sample Answer": "Yes, we provide cab/car services to and from the airport.Please note that this service iis chargeable"
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Tours",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you have information about tours or activities in the area?",
+        "Sample Answer": "We have a wealth of information about tours and activities in the area to help make your stay even more enjoyable. Depending on your interests, we can provide recommendations for various attractions, excursions, and local experiences. For more information please contact our front desk."
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "specific view",
+        "Question type": "Database",
+        "Information Required From Client": "Room Preference,Check-in/check-out Date\n",
+        "Question": "Can I request a specific view or room location?",
+        "Sample Answer": "We understand that preferences for views or room locations can enhance your overall experience during your stay. While we cannot guarantee specific requests, we always strive to accommodate our guests' preferences to the best of our ability, subject to availability."
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Payment/offer",
+        "Sub Sub Category": "Payment methods",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What forms of payment do you accept?",
+        "Sample Answer": "We offer flexibility in payment methods to cater to our guests' preferences, accepting various forms such as credit cards, debit cards, and cash."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Accessible",
+        "Sub Sub Category": "Accessible facilities",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are your facilities accessible for guests with disabilities?",
+        "Sample Answer": "Yes, absolutely. We are committed to ensuring that all of our guests, including those with disabilities, have a comfortable and accessible stay with us."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Accessible",
+        "Sub Sub Category": "Accessible features",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you have rooms equipped with accessibility features?",
+        "Sample Answer": "Yes, we do have rooms equipped with accessibility features to accommodate guests with special needs."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Storage",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you have storage facilities for suitcases?",
+        "Sample Answer": "Yes, we offer luggage storage facilities for our guests. You can store your luggage for a duration of 6 to 10 hours after check-out time. Please note that fees may apply for this service."
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "room descriptions",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Where can I find room descriptions?",
+        "Sample Answer": "Room descriptions can be found on our website or provided upon request."
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "Question type": "Database",
+        "Information Required From Client": "Check-in and Check-out Dates,Number of Rooms",
+        "Question": "Can I book more than one room at a time?",
+        "Sample Answer": "Yes, you can typically book more than one room at a time, depending on availability and the hotel's booking policies."
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Will I receive a confirmation of my reservation?",
+        "Sample Answer": "Yes, you should receive a confirmation of your reservation via email or text."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Fitness",
+        "Sub Sub Category": "Gym",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Can you provide any information on what is in your gym?",
+        "Sample Answer": "Our gym facilities include state-of-the-art equipment for cardio, strength training, and fitness classes. You can enjoy amenities such as treadmills, weights, and yoga mats."
+    },
+    {
+        "Category": "Food",
+        "Sub Category": "Restaurants/Club",
+        "Sub Sub Category": "Club",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Is there a club lounge access with free drinks and snacks available?",
+        "Sample Answer": "We offer club lounge access with complimentary drinks and snacks for eligible guests."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Fitness",
+        "Sub Sub Category": "Yoga classes",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are all guests free to attend yoga classes?",
+        "Sample Answer": "All guests are welcome to attend yoga classes, usually offered as part of our wellness program. Please check our schedule for class timings and availability."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Wi-Fi",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Is the Wi-Fi accessible in all areas of the hotel?",
+        "Sample Answer": "Wi-Fi is accessible in all areas of the hotel, including rooms, lobby, and common areas."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Swimming Pool",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Swimming pool costume is necessary?",
+        "Sample Answer": "Swimming pool costume is necessary for all guests using the pool area."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Fitness",
+        "Sub Sub Category": "Yoga classes",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What time are the yoga classes offered?",
+        "Sample Answer": "Yoga classes are offered at 8:00 AM and 5:00 PM daily."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Fitness",
+        "Sub Sub Category": "Yoga classes",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you provide yoga mats for the classes?",
+        "Sample Answer": "Yoga mats are usually provided for the classes, but guests are welcome to bring their own if preferred."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Fitness",
+        "Sub Sub Category": "Yoga classes",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "How long do the yoga sessions typically last?",
+        "Sample Answer": "Yoga sessions typically last for one hour."
+    },
+    {
+        "Category": "Food",
+        "Sub Category": "Restaurants/Club",
+        "Sub Sub Category": "Club",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What time does the club open?",
+        "Sample Answer": "The club typically opens in the evening, usually around 8:00 PM, but exact opening times may vary depending on the day of the week and any special events."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Babysitting",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Does the hotel offer babysitting services?",
+        "Sample Answer": "The hotel may offer babysitting services upon request, subject to availability and additional charges."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Cribs/baby cots",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you provide cribs or baby cots for infants?",
+        "Sample Answer": "Yes, we provide cribs or baby cots for infants upon request to ensure a comfortable stay for your little ones."
+    },
+    {
+        "Category": "Food",
+        "Sub Category": "Restaurants/Club",
+        "Sub Sub Category": "Restaurants",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are there any family-friendly dining options onsite?",
+        "Sample Answer": "Absolutely, we offer family-friendly dining options onsite, including kid's menus and high chairs, to cater to the whole family's needs."
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Childcare",
+        "Question type": "Database",
+        "Information Required From Client": "Specific Needs or Preferences",
+        "Question": "Can you recommend any childcare services in the area?",
+        "Sample Answer": "\nCertainly! We recommend [Name of Childcare Service], located just [distance] away from our hotel."
+    },
+    {
+        "Category": "Amenities",
+        "Sub Category": "Parking",
+        "Sub Sub Category": "vehicle charging",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are there electric vehicle charging stations available?",
+        "Sample Answer": "Yes, we do provide electric vehicle charging stations for our guests' convenience."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "House Keeping",
+        "Sub Sub Category": "laundry",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Is laundry service available at the hotel?",
+        "Sample Answer": "Yes, laundry service is available."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "House Keeping",
+        "Sub Sub Category": "laundry",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What are the laundry service hours?",
+        "Sample Answer": "Laundry service hours are from 8:00 AM to 6:00 PM."
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Tourism",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are there any famous museums or art galleries in the area?",
+        "Sample Answer": "Yes, the City Art Gallery and National Museum showcase renowned works of art. To know more please contact the front desk"
+    },
+    {
+        "Category": "Food",
+        "Sub Category": "Restaurants/Club",
+        "Sub Sub Category": "Restaurants",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "What are some popular restaurants or cafes within walking distance?",
+        "Sample Answer": "Check out the vibrant eateries on Main Street for popular dining options within walking distance. To know more please contact the front desk"
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Tourism",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are there any historical sites or monuments worth seeing nearby?",
+        "Sample Answer": "Don't miss the impressive Fort Heritage Monument just a short walk away."
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Tourism",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you offer tours to nearby attractions?",
+        "Sample Answer": "Yes, we offer guided tours to nearby attractions like the Botanical Gardens and the Castle. To know more please contact the front desk"
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Shopping",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Can you recommend any local markets or shopping areas?",
+        "Sample Answer": "Yes we recommend the Farmer's Market for local produce and unique shopping experiences. To know more please contact the front desk"
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Entertainment",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are there any theaters or cinemas nearby for entertainment?",
+        "Sample Answer": "Enjoy entertainment at the nearby (name) Theater showcasing the latest shows and films.To know more please contact the fromnt desk"
+    },
+    {
+        "Category": "Nearby Attractions/needs",
+        "Sub Category": "Attractions",
+        "Sub Sub Category": "Sports",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are there any sports stadiums or arenas nearby for events or games?",
+        "Sample Answer": "Catch exciting games and events at the Sports Arena located nearby."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Transportation",
+        "Sub Sub Category": "Public transport",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Is there a nearby metro station?",
+        "Sample Answer": "Yes, there is a nearby subway or metro station located within walking distance from the hotel. It provides convenient access to various attractions and destinations in the city."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Transportation",
+        "Sub Sub Category": "cab service",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Are taxi services readily available from the hotel?",
+        "Sample Answer": "Taxi services are readily available from the hotel; our staff can assist you in arranging transportation as needed."
+    },
+    {
+        "Category": "Policies",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Room service",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Can I order food from outside the hotel through room service?",
+        "Sample Answer": "Unfortunately, we only provide food from our hotel's restaurant for room service."
+    },
+    {
+        "Category": "Hotel Services",
+        "Sub Category": "Services",
+        "Sub Sub Category": "Room service",
+        "Question type": "FAQs",
+        "Information Required From Client": "NA",
+        "Question": "Do you offer 24-hour room service?",
+        "Sample Answer": "Yes, we offer 24-hour room service for our guests."
+    }
+]
