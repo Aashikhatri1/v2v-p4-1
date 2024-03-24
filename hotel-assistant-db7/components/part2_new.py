@@ -224,14 +224,14 @@ def get_user_info(info, chat_history, query, get_user_info_prompt):
     return str(matches)
 
 
-def response_type(query, category, type_value, chat_history):
+def response_type(query, category, chat_history):
     # Assuming category now includes 'QuestionType'
     question_type = category.get("QuestionType")
-    general_talk = category.get('GeneralTalk')
+    ContextGiven = category.get('ContextGiven')
     if question_type == "FAQ":
         print("General Inquiry - FAQ")
 
-        if general_talk == "Yes":
+        if ContextGiven == "No":
             chat_history = pplx_playht_final.final_answer('', chat_history, query, prompt3)
         else:
             info = find_information(data, category)  
@@ -252,11 +252,6 @@ def response_type(query, category, type_value, chat_history):
         
         info = find_information_db(data, final_sub_sub_category_)
         print('db info:',info)
-
-        # chat_user_info = get_user_info(info, chat_history, query)
-
-        # if 'Information Required From Client' in chat_user_info and not None and not 'N/A':
-        #     chat_user_info = chat_user_info['Information Required From Client']
         
         if info != []:
             for info_item in info:
@@ -280,12 +275,6 @@ def response_type(query, category, type_value, chat_history):
                             d, fs = sf.read(filename)
                             sd.play(d, fs)
 
-                            
-                            # call llama for json to fetch data from db
-
-                            #fetch data from db
-
-                            # call llama for final answer
                             chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
                             # pass
                     else:
@@ -294,8 +283,6 @@ def response_type(query, category, type_value, chat_history):
         
         else:
             chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
-        # chat_history = pplx_playht_final.final_answer(info, chat_history, query)
         
-        # chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, chat_history, query, prompt4)
 
     return chat_history

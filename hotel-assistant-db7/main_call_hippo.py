@@ -11,12 +11,7 @@ import threading
 from queue import Queue
 
 sys.path.append('./assets')
-import json
-
-
-
 import part2_new
-
 import prompts
 prompt1 = prompts.prompt1
 prompt2 = prompts.prompt2
@@ -44,59 +39,50 @@ audio_thread = threading.Thread(target=audio_worker)
 audio_thread.start()
 
 
-
-
 def chat_with_user():
     chat_history = []
     while True:
-        query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
-        print('query:', query)
-        
-        category_filler = llama_get_category(query, chat_history, prompt1, prompt2)  # Processes the query to categorize and determine the filler response.
-        print('category_filler:', category_filler)
-        
-        type_value, filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
-
-
-        print('category_filler:', category_filler)
-        print('type_value:', type_value)
-        print('filler_no:', filler_no)
-        print('Category:', Category)
-        print('Sub_Category:', Sub_Category)
-        print('QuestionType:', QuestionType)
-
-        general_talk = ''
-        for item in category_filler:
-        
-            category_dict = json.loads(item[0].replace('\n', ''))
+        # query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
+        query = input('user: ')
+        if query:
+            print('query:', query)
             
-            # Check if the dictionary has 'Category' or 'FillerNo' and update the variables accordingly
-            if 'General Talk' in category_dict:
-                general_talk = category_dict['General Talk']
+            category_filler = llama_get_category(query, chat_history, prompt1, prompt2)  # Processes the query to categorize and determine the filler response.
+            print('category_filler:', category_filler)
+            
+            filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
 
-        # Assembling the category information into a dictionary for further processing.
-        category = {
-            'Category': Category,
-            'Sub Category': Sub_Category,
-            'QuestionType': QuestionType,
-            'GeneralTalk': general_talk
-        }
 
-        # Processes the user query and updates chat history accordingly.
-        chat_history = part2_new.response_type(query, category, type_value, chat_history)
-        print(chat_history)
+            print('category_filler:', category_filler)
+            print('filler_no:', filler_no)
+            print('Category:', Category)
+            print('Sub_Category:', Sub_Category)
+            print('QuestionType:', QuestionType)
 
-        # words = chat_history.split()  # Split the text into words
+            ContextGiven = ''
+            for item in category_filler:
+            
+                category_dict = json.loads(item[0].replace('\n', ''))
+                
+                # Check if the dictionary has 'Category' or 'FillerNo' and update the variables accordingly
+                if 'Context Given' in category_dict:
+                    ContextGiven = category_dict['Context Given']
 
-        # # Check if the number of words is more than 200
-        # if len(words) > 200:
-        #     # Keep only the last 200 words
-        #     chat_history = words[-200:]
-        #     print('New chat history:', chat_history)
+            # Assembling the category information into a dictionary for further processing.
+            category = {
+                'Category': Category,
+                'Sub Category': Sub_Category,
+                'QuestionType': QuestionType,
+                'ContextGiven': ContextGiven
+            }
 
-        if len(chat_history) > 3:
-            chat_history = chat_history[-3:]
-            print('New chat history:', chat_history)
+            # Processes the user query and updates chat history accordingly.
+            chat_history = part2_new.response_type(query, category, chat_history)
+            print(chat_history)
+
+            if len(chat_history) > 5:
+                chat_history = chat_history[-5:]
+                print('New chat history:', chat_history)
 
 
 def open_website(url):
@@ -125,7 +111,10 @@ while True:  # Main loop for handling incoming calls
         chat_with_user()  # Start chat with user
         end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence = 0.98)
         if end_call:
-            pg.click(end_call)
+            # pg.click(end_call)
+            pg.mouseDown()
+            time.sleep(0.1)  # Short delay to simulate a real click
+            pg.mouseUp()
             print('Clicked on end call.')
         print("Waiting for next call...")
         time.sleep(5)

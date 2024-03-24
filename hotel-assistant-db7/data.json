@@ -6,7 +6,7 @@
         "Question type": "Database",
         "Information Required From Client": "Check-in date, Check-out date, Number of Rooms",
         "Question": "Can you check if there are any rooms available?",
-        "Sample Answer, without the information": "Sure sir/mam, I would be happy to provide you with the details. can you please help me with the check-in and check-out dates, along with the number of rooms needed."
+        "Sample Answer": "Sure sir/mam, I would be happy to provide you with the details. can you please help me with the check-in and check-out dates, along with the number of rooms needed."
     },
     {
         "Category": "Room",
@@ -15,7 +15,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Can I cancel my booking?",
-        "Sample Answer, without the information": "Yes sir/mam, booking cancellation is allowed 24 hours before check-in, without any charges. Within 24 hours 50% of the room charges will be levied."
+        "Sample Answer": "Yes sir/mam, booking cancellation is allowed 24 hours before check-in, without any charges. Within 24 hours 50% of the room charges will be levied."
     },
     {
         "Category": "Room",
@@ -24,7 +24,7 @@
         "Question type": "Database",
         "Information Required From Client": "Reservation Details, New check-in date, New check-out date\n",
         "Question": "I need to change the dates of my reservation. How can I do that?",
-        "Sample Answer, without the information": "Sure sir/mam, to change your reservation dates, can you please provide your booking ID or mobile number and the new check-in and check-out dates?"
+        "Sample Answer": "Sure sir/mam, to change your reservation dates, can you please provide your booking ID or mobile number and the new check-in and check-out dates?"
     },
     {
         "Category": "Hotel",
@@ -33,7 +33,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What are the check-in and check-out times?",
-        "Sample Answer, without the information": "Check-in is at 1 PM, and check-out is at 11 AM."
+        "Sample Answer": "Check-in is at 1 PM, and check-out is at 11 AM."
     },
     {
         "Category": "Hotel",
@@ -42,7 +42,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "How can I access the hotel Wi-Fi?",
-        "Sample Answer, without the information": "To access the Wi-Fi, please search for the network 'HotelGuest' in available networks and you can use your room number as the password."
+        "Sample Answer": "To access the Wi-Fi, please search for the network 'HotelGuest' in available networks and you can use your room number as the password."
     },
     {
         "Category": "Room",
@@ -51,7 +51,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Can I request an extra bed or crib in my room?",
-        "Sample Answer, without the information": "Sure sir/mam. You can get an extra bed or crib upon request, subject to availability. This is on a chargeable basis. If you let me know what time you need it we can have the room service setup for you."
+        "Sample Answer": "Sure sir/mam. You can get an extra bed or crib upon request, subject to availability. This is on a chargeable basis. If you let me know what time you need it we can have the room service setup for you."
     },
     {
         "Category": "Hotel",
@@ -60,7 +60,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are pets allowed in the hotel?",
-        "Sample Answer, without the information": "Pets are welcome with prior notice and a fee of [insert fee] per stay. Would you like to know about the detailed pet policy at our hotel"
+        "Sample Answer": "Pets are welcome with prior notice and a fee of [insert fee] per stay. Would you like to know about the detailed pet policy at our hotel"
     },
     {
         "Category": "Hotel",
@@ -69,7 +69,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What are some must-see attractions nearby?",
-        "Sample Answer, without the information": "Delhi has many attractions to explore. \n\n- You can start with Red Fort (Lal Qila) - A stunning 17th-century Mughal fort complex and UNESCO World Heritage site] Just 5 km from the hotel.\n- Jama Masjid - One of the largest mosques in India, built in the 17th century. Known for its impressive architecture and courtyard that can hold 25,000 people.\n- Humayun's Tomb - The architectural inspiration for the Taj Mahal, this grand 16th-century mausoleum is surrounded by lush gardens. A UNESCO World Heritage site\n- If you want to shop then you can visit Chandni Chowk, which is a bustling market dating back to the 17th century, famous for its street food, fabrics, jewellery, and electronics.\n\nI would be happy to provide more information if needed."
+        "Sample Answer": "Delhi has many attractions to explore such as Red Fort (Lal Qila) \n- Jama Masjid \n- Humayun's Tomb -\n- If you want to shop then you can visit Chandni Chowk,  famous for its street food, fabrics, jewellery, and electronics.\n\nI would be happy to provide more information if needed."
     },
     {
         "Category": "Hotel",
@@ -78,7 +78,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What is the hotel's smoking policy?",
-        "Sample Answer, without the information": "Our hotel is entirely non-smoking. Smoking is permitted in designated outdoor areas only."
+        "Sample Answer": "Our hotel is entirely non-smoking. Smoking is permitted in designated outdoor areas only."
     },
     {
         "Category": "Hotel",
@@ -87,7 +87,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Can I check in early if I arrive before the standard check-in time?",
-        "Sample Answer, without the information": "Early check-in is subject to availability. Please contact us in advance and we'll do our best to accommodate your request."
+        "Sample Answer": "Early check-in is subject to availability. Please contact us in advance and we'll do our best to accommodate your request."
     },
     {
         "Category": "Room",
@@ -96,7 +96,7 @@
         "Question type": "Database",
         "Information Required From Client": "Check-in and Check-out Dates,Number of Guests",
         "Question": "What room types do you have available (e.g., single, double, suite)?",
-        "Sample Answer, without the information": "We have 4 types of rooms that cater to different preferences and needs. \n\n- Classic Rooms: This is our most budget-friendly option, these cosy rooms come with all the essential amenities for a comfortable stay\n- Executive Rooms: Perfect for business travellers, these rooms offer a bit more space and some extra perks like a work desk and complimentary breakfast.\n- Superior Rooms: They provide a touch of luxury with more area, plush bedding, and often better views. Great for a special occasion or a little indulgence.\n- Suites: Suites come with separate living areas, premium amenities, and personalized service"
+        "Sample Answer": "We have 4 types of rooms that cater to different preferences and needs. \n\n- Classic Rooms: This is our most budget-friendly option, these cosy rooms come with all the essential amenities for a comfortable stay\n- Executive Rooms: Perfect for business travellers, these rooms offer a bit more space and some extra perks like a work desk and complimentary breakfast.\n- Superior Rooms: They provide a touch of luxury with more area, plush bedding, and often better views. Great for a special occasion or a little indulgence.\n- Suites: Suites come with separate living areas, premium amenities, and personalized service"
     },
     {
         "Category": "Room",
@@ -105,7 +105,7 @@
         "Question type": "Database",
         "Information Required From Client": "Dates of Stay,Number of Guests",
         "Question": "What is the rate for Superior Room?",
-        "Sample Answer, without the information": "Currently, the rate for our Superior Room starts at (??rate) per night. However, rates may vary depending on factors such as the date of stay, length of stay, and any special promotions or discounts available."
+        "Sample Answer": "Currently, the rate for our Superior Room starts at (??rate) per night. However, rates may vary depending on factors such as the date of stay, length of stay, and any special promotions or discounts available."
     },
     {
         "Category": "Room",
@@ -114,7 +114,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "How can I make a reservation?",
-        "Sample Answer, without the information": "You can make a reservation online through our website, or by emailing us at Palace.Delhi@tajhotels.com"
+        "Sample Answer": "You can make a reservation online through our website, or by emailing us at Palace.Delhi@tajhotels.com"
     },
     {
         "Category": "Room",
@@ -123,7 +123,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What is your cancellation policy?",
-        "Sample Answer, without the information": "Our cancellation policy allows for free cancellation until 24 hours before your scheduled arrival. Cancellations made after this time will incur a penalty equivalent to half of night's charge, in addition to any applicable taxes and fees."
+        "Sample Answer": "Our cancellation policy allows for free cancellation until 24 hours before your scheduled arrival. Cancellations made after this time will incur a penalty equivalent to half of night's charge, in addition to any applicable taxes and fees."
     },
     {
         "Category": "Hotel",
@@ -132,7 +132,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Do you have onsite parking, and is there a fee?",
-        "Sample Answer, without the information": "Yes, we do offer onsite parking for our guests, and the best part is there is no fee for parking!"
+        "Sample Answer": "Yes, we do offer onsite parking for our guests, and the best part is there is no fee for parking!"
     },
     {
         "Category": "Hotel",
@@ -141,7 +141,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Is there cab service to/from the airport or other locations?",
-        "Sample Answer, without the information": "Yes, we provide pick-up and Drop services to and from the airport.Please note that this service is chargeable"
+        "Sample Answer": "Yes, we provide pick-up and Drop services to and from the airport.Please note that this service is chargeable"
     },
     {
         "Category": "Hotel",
@@ -150,7 +150,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Do you have information about tours or activities in the area?",
-        "Sample Answer, without the information": "Certainly sir/mam. There are multiple tours available depending on your interests, you can choose \n\n- Guided Walking Tour of Connaught Place, to explore the iconic architecture and history of CP with a knowledgeable local guide. Tours depart daily from our hotel lobby\n- Food Tour of Old Delhi, covering culinary scene of Old Delhi on a guided food tour. Sample delicious street food and learn about the area's rich history. We can arrange pickup from the hotel.\n- Cycling Tour of Lutyens' Delhi: In this on cycle you will cross iconic landmarks like India Gate and Rashtrapati Bhawan. Rentals and tours available through our concierge\n- Day Trip to Agra: You can also visit the magnificent Taj Mahal and Agra Fort on a full-day guided tour. You can get a private car and guide for a seamless experience"
+        "Sample Answer": "Certainly  There are multiple tours available such as tours to Connaught Place, Lutyens' Delhi, India Gate and Rashtrapati Bhawan. "
     },
     {
         "Category": "Room",
@@ -159,7 +159,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What forms of payment do you accept?",
-        "Sample Answer, without the information": "We accept payments in various forms such as credit cards, debit cards, and cash."
+        "Sample Answer": "We accept payments in various forms such as credit cards, debit cards, and cash."
     },
     {
         "Category": "Hotel",
@@ -168,7 +168,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are your facilities accessible for guests with disabilities?",
-        "Sample Answer, without the information": "Yes, absolutely. We are committed to ensuring that all of our guests, including those with disabilities, have a comfortable and accessible stay with us."
+        "Sample Answer": "Yes, absolutely. We are committed to ensuring that all of our guests, including those with disabilities, have a comfortable and accessible stay with us."
     },
     {
         "Category": "Hotel",
@@ -177,7 +177,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Do you have storage facilities for something valuable?",
-        "Sample Answer, without the information": "Yes, you will get a locker in the wardrobe of your hotel. It uses a secure digital password that can be generated by you while locking. You can keep your valuables in that."
+        "Sample Answer": "Yes, you will get a locker in the wardrobe of your hotel. It uses a secure digital password that can be generated by you while locking. You can keep your valuables in that."
     },
     {
         "Category": "Room",
@@ -186,7 +186,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Where can I find room descriptions?",
-        "Sample Answer, without the information": "Room descriptions can be found on our website at the www.tajhotels.com/description. Or you can provide your email address and I can mail the details there."
+        "Sample Answer": "Room descriptions can be found on our website at the www.tajhotels.com/description. Or you can provide your email address and I can mail the details there."
     },
     {
         "Category": "Room",
@@ -195,7 +195,7 @@
         "Question type": "Database",
         "Information Required From Client": "Check-in and Check-out Dates,Number of Rooms",
         "Question": "Can I book more than one room at a time?",
-        "Sample Answer, without the information": "Certainly sir/mam, that should not be a problem."
+        "Sample Answer": "Certainly sir/mam, that should not be a problem."
     },
     {
         "Category": "Room",
@@ -204,7 +204,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Will I receive a confirmation of my reservation?",
-        "Sample Answer, without the information": "Yes, you should receive a confirmation of your reservation on the email you had shared"
+        "Sample Answer": "Yes, you should receive a confirmation of your reservation on the email you had shared"
     },
     {
         "Category": "Hotel",
@@ -213,7 +213,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Can you provide any information on what is in your gym?",
-        "Sample Answer, without the information": "Our gym facilities include state-of-the-art equipment for cardio and strength training. You can enjoy amenities such as treadmills, steppers, weights, and yoga mats."
+        "Sample Answer": "Our gym facilities include state-of-the-art equipment for cardio and strength training. You can enjoy amenities such as treadmills, steppers, weights, and yoga mats."
     },
     {
         "Category": "Hotel",
@@ -222,7 +222,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Is there a club lounge access with free drinks and snacks available?",
-        "Sample Answer, without the information": "We offer club lounge access with one complimentary drink and snacks for eligible guests."
+        "Sample Answer": "We offer club lounge access with one complimentary drink and snacks for eligible guests."
     },
     {
         "Category": "Hotel",
@@ -231,7 +231,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are all guests free to attend yoga classes?",
-        "Sample Answer, without the information": "All guests are welcome to attend yoga classes, usually offered as part of our wellness program. Yoga classes are offered at 8:00 AM and 5:00 PM daily."
+        "Sample Answer": "All guests are welcome to attend yoga classes, usually offered as part of our wellness program. Yoga classes are offered at 8:00 AM and 5:00 PM daily."
     },
     {
         "Category": "Hotel",
@@ -240,7 +240,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Is the Wi-Fi accessible in all areas of the hotel?",
-        "Sample Answer, without the information": "Yes, sir/mam, Wi-Fi is accessible in all areas of the hotel, including rooms, lobby, and common areas."
+        "Sample Answer": "Yes, sir/mam, Wi-Fi is accessible in all areas of the hotel, including rooms, lobby, and common areas."
     },
     {
         "Category": "Hotel",
@@ -249,7 +249,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Swimming pool costume is necessary?",
-        "Sample Answer, without the information": "Swimming pool costume is necessary for all guests using the pool area."
+        "Sample Answer": "Swimming pool costume is necessary for all guests using the pool area."
     },
     {
         "Category": "Hotel",
@@ -258,7 +258,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What time are the yoga classes offered?",
-        "Sample Answer, without the information": "Yoga classes are offered at 8:00 AM and 5:00 PM daily."
+        "Sample Answer": "Yoga classes are offered at 8:00 AM and 5:00 PM daily."
     },
     {
         "Category": "Hotel",
@@ -267,7 +267,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Do you provide yoga mats for the classes?",
-        "Sample Answer, without the information": "Yoga mats are usually provided for the classes, but guests are welcome to bring their own if preferred."
+        "Sample Answer": "Yoga mats are usually provided for the classes, but guests are welcome to bring their own if preferred."
     },
     {
         "Category": "Hotel",
@@ -276,7 +276,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "How long do the yoga sessions typically last?",
-        "Sample Answer, without the information": "Yoga sessions typically last for one hour."
+        "Sample Answer": "Yoga sessions typically last for one hour."
     },
     {
         "Category": "Hotel",
@@ -285,7 +285,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What time does the club open?",
-        "Sample Answer, without the information": "The club typically opens in the evening, usually around 8:00 PM, but exact opening times may vary depending on the day of the week and any special events."
+        "Sample Answer": "The club typically opens in the evening, usually around 8:00 PM, but exact opening times may vary depending on the day of the week and any special events."
     },
     {
         "Category": "Hotel Services",
@@ -294,7 +294,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Does the hotel offer babysitting services?",
-        "Sample Answer, without the information": "The hotel may offer babysitting services upon request, subject to availability and additional charges."
+        "Sample Answer": "The hotel may offer babysitting services upon request, subject to availability and additional charges."
     },
     {
         "Category": "Hotel Services",
@@ -303,7 +303,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Do you provide cribs or baby cots for infants?",
-        "Sample Answer, without the information": "Yes, we provide cribs or baby cots for infants upon request to ensure a comfortable stay for your little ones."
+        "Sample Answer": "Yes, we provide cribs or baby cots for infants upon request to ensure a comfortable stay for your little ones."
     },
     {
         "Category": "Hotel",
@@ -312,7 +312,7 @@
         "Question type": "Database",
         "Information Required From Client": "Specific Needs or Preferences",
         "Question": "Can you recommend any childcare services in the area?",
-        "Sample Answer, without the information": "\nCertainly! We recommend [Name of Childcare Service], located just [distance] away from our hotel."
+        "Sample Answer": "\nCertainly! We recommend [Name of Childcare Service], located just [distance] away from our hotel."
     },
     {
         "Category": "Hotel",
@@ -321,7 +321,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are there electric vehicle charging stations available?",
-        "Sample Answer, without the information": "Yes, we do provide electric vehicle charging stations for our guests' convenience."
+        "Sample Answer": "Yes, we do provide electric vehicle charging stations for our guests' convenience."
     },
     {
         "Category": "Hotel",
@@ -330,7 +330,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Is laundry service available at the hotel?",
-        "Sample Answer, without the information": "Yes, laundry service is available."
+        "Sample Answer": "Yes, laundry service is available."
     },
     {
         "Category": "Hotel",
@@ -339,7 +339,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What are the laundry service hours?",
-        "Sample Answer, without the information": "Laundry service hours are from 8:00 AM to 6:00 PM."
+        "Sample Answer": "Laundry service hours are from 8:00 AM to 6:00 PM."
     },
     {
         "Category": "Hotel",
@@ -348,7 +348,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are there any famous museums or art galleries in the area?",
-        "Sample Answer, without the information": "Yes, the City Art Gallery and National Museum showcase renowned works of art."
+        "Sample Answer": "Yes, the City Art Gallery and National Museum showcase renowned works of art."
     },
     {
         "Category": "Hotel",
@@ -357,7 +357,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "What are some popular restaurants or cafes within walking distance?",
-        "Sample Answer, without the information": "Sir/Mam, you can go Check out the vibrant eateries on Main Street for popular dining options within walking distance"
+        "Sample Answer": "Sir/Mam, you can go Check out the vibrant eateries on Main Street for popular dining options within walking distance"
     },
     {
         "Category": "Hotel",
@@ -366,7 +366,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Can you recommend any local markets or shopping areas?",
-        "Sample Answer, without the information": "Certainly sir, the Farmer's Market for local produce and unique shopping experiences."
+        "Sample Answer": "Certainly sir, the Farmer's Market for local produce and unique shopping experiences."
     },
     {
         "Category": "Hotel",
@@ -375,7 +375,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are there any theaters or cinemas nearby for entertainment?",
-        "Sample Answer, without the information": "Enjoy entertainment at the nearby (name) Theater showcasing the latest shows and films"
+        "Sample Answer": "Enjoy entertainment at the nearby (name) Theater showcasing the latest shows and films"
     },
     {
         "Category": "Hotel",
@@ -384,7 +384,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are there any sports stadiums or arenas nearby for events or games?",
-        "Sample Answer, without the information": "Yes there are 2 stadiums nearby, one of Cricket and another for Hockey"
+        "Sample Answer": "Yes there are 2 stadiums nearby, one of Cricket and another for Hockey"
     },
     {
         "Category": "Hotel",
@@ -393,7 +393,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Is there a nearby metro station?",
-        "Sample Answer, without the information": "Yes, there is a Shivaji Metro Station is a 5-minute walk from the Hotel, It provides convenient access to various attractions and destinations in the city."
+        "Sample Answer": "Yes, there is a Shivaji Metro Station is a 5-minute walk from the Hotel, It provides convenient access to various attractions and destinations in the city."
     },
     {
         "Category": "Hotel",
@@ -402,7 +402,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Are taxi services readily available from the hotel?",
-        "Sample Answer, without the information": "Taxi services are readily available from the hotel; our staff can assist you in arranging transportation as needed."
+        "Sample Answer": "Taxi services are readily available from the hotel; our staff can assist you in arranging transportation as needed."
     },
     {
         "Category": "Room",
@@ -411,7 +411,7 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Can I order food from outside the hotel through room service?",
-        "Sample Answer, without the information": "Unfortunately, we only provide food from our hotel's restaurant for room service. We can provide you the utensils to enjoy your food"
+        "Sample Answer": "Unfortunately, we only provide food from our hotel's restaurant for room service. We can provide you the utensils to enjoy your food"
     },
     {
         "Category": "Room",
@@ -420,6 +420,6 @@
         "Question type": "FAQs",
         "Information Required From Client": "NA",
         "Question": "Do you offer 24-hour room service?",
-        "Sample Answer, without the information": "Yes, we offer 24-hour room service for our guests."
+        "Sample Answer": "Yes, we offer 24-hour room service for our guests."
     }
 ]
