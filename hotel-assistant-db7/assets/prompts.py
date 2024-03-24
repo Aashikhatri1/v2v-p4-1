@@ -84,10 +84,10 @@ get_user_info_prompt = """
                 Fetch information required from client from the following info and create a json out of it as the example given:
                 Fill the values based on the user query and chat history.
                 If user has given any information in previous part of conversation, include it in the json. Otherwise write "N/A".
-                Always respond in json format {"info1": "<info provided>", "info2": "<info provided>", "info3": "<info provided>"}.
+                Always respond in json format as the example given.
                 Write "N/A" if a particular info is not provided.
-                example: { "number of guests": 5, "check in date": "2023-03-15", "check out date": "N/A"}.
-                Remember that it should be a valid json.
+                example: {"number of guests": "5", "check in date": "2023-03-15", "check out date": "N/A"}.
+                Remember that it should be a valid json, with all the elements in double quotes.
                 
                 """
 

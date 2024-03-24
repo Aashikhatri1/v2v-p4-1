@@ -2,7 +2,6 @@ import sys
 sys.path.append('./components')
 import json
 import speech_to_text
-import part2
 from async_llama2 import llama_get_category
 from playFiles import playAudioFile
 import webbrowser
@@ -10,6 +9,17 @@ import pyautogui as pg
 import time
 import threading
 from queue import Queue
+
+sys.path.append('./assets')
+import json
+
+
+
+import part2_new
+
+import prompts
+prompt1 = prompts.prompt1
+prompt2 = prompts.prompt2
 
 # import csv2json
 # csv2json.convert_csv_to_json('data.csv')
@@ -34,22 +44,15 @@ audio_thread = threading.Thread(target=audio_worker)
 audio_thread.start()
 
 
+
+
 def chat_with_user():
     chat_history = []
-    global is_audio_playing
     while True:
-        end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence = 0.98)
-        if end_call:
-            print("Call ended")
-            break
-        # query = input('user: ')
-        while is_audio_playing:
-            time.sleep(0.1)
-            
         query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
         print('query:', query)
         
-        category_filler = llama_get_category(query)  # Processes the query to categorize and determine the filler response.
+        category_filler = llama_get_category(query, chat_history, prompt1, prompt2)  # Processes the query to categorize and determine the filler response.
         print('category_filler:', category_filler)
         
         type_value, filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
@@ -80,7 +83,20 @@ def chat_with_user():
         }
 
         # Processes the user query and updates chat history accordingly.
-        chat_history = part2.response_type(query, category, type_value, chat_history)
+        chat_history = part2_new.response_type(query, category, type_value, chat_history)
+        print(chat_history)
+
+        # words = chat_history.split()  # Split the text into words
+
+        # # Check if the number of words is more than 200
+        # if len(words) > 200:
+        #     # Keep only the last 200 words
+        #     chat_history = words[-200:]
+        #     print('New chat history:', chat_history)
+
+        if len(chat_history) > 3:
+            chat_history = chat_history[-3:]
+            print('New chat history:', chat_history)
 
 
 def open_website(url):
