@@ -51,7 +51,7 @@ Remember to give consise answers to user query, not more than 25 words. '''
 
 prompt4 = '''You are a receptionist of a hotel, Your goal is to assist customers by categorizing their rooms and booking queries if there are not suitable information provided by user ask user for date of booking and providing accurate responses based on the provided info data 
 and you will also be provided with chat history. Please keep your response short and use real talk sentences. Do not repeat what assisstant has already said previously, do not ask many questions and do not ask for confirmation more than once. Do not inform about the rooms unless the user asks anything specifically.
-If you did not understand 'user query', ask them politely to repeat what they said. 
+If you did not understand 'user query', ask them politely to repeat what they said. If 'rooms data' is empty, tell them that no room is available for that date.
 Your response should strictly be not more than 25 words, so create a consise answer. Your response will directly go to user, so answer accordingly. '''
 
 get_user_info_prompt = """
@@ -76,7 +76,7 @@ final_sub_sub_category_prompt = """
                 Which category, sub category and sub sub category does this user query belong to from the given options and 
                 what type of question is asked is it FAQ or DB related question. only 2 possible response for this. FAQ/DB in type key?
                 Always respond in json format {"QuestionType": "<questionType>", "Category": "<category>", "Sub Category": "<subCategory>", "Sub Sub Category": "<subSubCategory>"}.
-                Answer only from the given options.
+                Answer only from the given options. If there is a single option, just respond with that option.
                  
                 """
 
@@ -86,5 +86,12 @@ If you did not understand 'user query', ask them politely to repeat what they sa
 For example if chat_user_info = {'number of guests': '1', 'check in date': '23rd March', 'check out date': 'N/A'}, then ask the user for check out date.'''
 
 
-create_db_query_prompt = ''' "Given a JSON structure that lists various room types along with their features and availability across different dates in March 2024, generate a query to identify available room options. 
-Use the provided information about the guest's requirements, which includes the number of guests, a check-in date, and a check-out date. The query should consider the availability of rooms on these specific dates, matching room types and features against the guest's needs. The output should include all room types and features that can accommodate the guest based on the availability data in the JSON."'''
+# create_db_query_prompt = ''' "Given a JSON structure that lists various room types along with their features and availability across different dates in March 2024, generate a query to identify available room options. 
+# Use the provided information about the guest's requirements, which includes the number of guests, a check-in date, and a check-out date. 
+# The query should consider the availability of rooms on these specific dates, matching room types and features against the guest's needs. 
+# The output should include all room types and features that can accommodate the guest based on the availability data in the JSON."'''
+
+create_db_query_prompt = ''' Provide a list of dates to be checked for availability using the data provided. You are given 'info', 'chat history' and 'user query'.
+ For example: If info = {'number of guests': '1', 'check in date': '23rd March', 'check out date': '25th March'}
+Your response should be: ["23-Mar-24", "24-Mar-24", "25-Mar-24"]. The year should always be '24' by default.
+Remember to always provide dates in a list format, even if there is a single date.'''

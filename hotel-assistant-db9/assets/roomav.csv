@@ -1,0 +1,32 @@
+Date,RoomType,RoomAmenities,NumberOfRoomsAvailable
+10-Mar-24,Superior Room,Park view,0
+10-Mar-24,Superior Room,Pool view,0
+10-Mar-24,Taj Club Suite,Park view,0
+10-Mar-24,Taj Club Suite,Pool view,0
+10-Mar-24,Luxury Suite,Pool view,0
+10-Mar-24,Luxury Suite,Garden view,0
+11-Mar-24,Superior Room,Park view,5
+11-Mar-24,Superior Room,Pool view,6
+11-Mar-24,Taj Club Suite,Park view,7
+11-Mar-24,Taj Club Suite,Pool view,10
+11-Mar-24,Luxury Suite,Pool view,20
+11-Mar-24,Luxury Suite,Garden view,11
+11-Mar-24,Superior Room,Park view,3
+11-Mar-24,Superior Room,Pool view,2
+12-Mar-24,Taj Club Suite,Park view,4
+13-Mar-24,Taj Club Suite,Pool view,5
+14-Mar-24,Luxury Suite,Pool view,7
+15-Mar-24,Luxury Suite,Garden view,6
+16-Mar-24,Superior Room,Park view,5
+17-Mar-24,Superior Room,Pool view,7
+18-Mar-24,Taj Club Suite,Park view,8
+19-Mar-24,Taj Club Suite,Pool view,2
+20-Mar-24,Luxury Suite,Pool view,5
+21-Mar-24,Luxury Suite,Garden view,4
+22-Mar-24,Superior Room,Park view,5
+23-Mar-24,Superior Room,Pool view,7
+24-Mar-24,Taj Club Suite,Park view,8
+25-Mar-24,Taj Club Suite,Pool view,2
+26-Mar-24,Luxury Suite,Pool view,5
+27-Mar-24,Luxury Suite,Garden view,4
+,,,
