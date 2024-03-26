@@ -15,4 +15,6 @@ Input Device: Line 2(VAC)
 db6 - Satvinder Sir sheet
 
 
-db7 prompt conf))
+db7 prompt conf, prompt changes
+
+db8 chat history summarisation))
