@@ -86,4 +86,5 @@ If you did not understand 'user query', ask them politely to repeat what they sa
 For example if chat_user_info = {'number of guests': '1', 'check in date': '23rd March', 'check out date': 'N/A'}, then ask the user for check out date.'''
 
 
-create_db_query_prompt = ''' '''
+create_db_query_prompt = ''' "Given a JSON structure that lists various room types along with their features and availability across different dates in March 2024, generate a query to identify available room options. 
+Use the provided information about the guest's requirements, which includes the number of guests, a check-in date, and a check-out date. The query should consider the availability of rooms on these specific dates, matching room types and features against the guest's needs. The output should include all room types and features that can accommodate the guest based on the availability data in the JSON."'''

@@ -41,10 +41,23 @@ audio_thread.start()
 
 
 def chat_with_user():
+    
     chat_history = []
+    # chat_history = [{'role': 'user', 'content': 'Are there any amenities available?'}, {'role': 'assistant', 'content': 'Yes, we have a range of amenities available, including a fitness center, a business center, and a swimming pool. We also offer laundry services, a concierge service, and a tour desk. Additionally, we have a childcare service available, located just a short distance from our hotel. Would you like more information about any of these amenities?'}]
     while True:
-        # query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
-        query = input('user: ')
+
+        end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence = 0.98)  # path to your end call button image
+        if end_call:
+            print("Call ended")
+            break
+        
+        start_time = datetime.now()
+        print(start_time)
+        query, chat_history = transcribe_stream(chat_history)
+        print(f"Summary: {chat_history}")
+        print((datetime.now() - start_time).total_seconds())
+
+        # query = input('user: ')
         if query:
             print('query:', query)
             
@@ -80,10 +93,6 @@ def chat_with_user():
             # Processes the user query and updates chat history accordingly.
             chat_history = part2_new.response_type(query, category, chat_history)
             print(chat_history)
-
-            if len(chat_history) > 5:
-                chat_history = chat_history[-5:]
-                print('New chat history:', chat_history)
 
 
 def open_website(url):

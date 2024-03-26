@@ -355,7 +355,8 @@ def response_type(query, category, chat_history):
                         filename = 'assets/fillers/cat2fillerno1.wav'
                         d, fs = sf.read(filename)
                         sd.play(d, fs)
-
+                        
+                        # rooms_data = 
                         chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
                         # pass
                 else:
