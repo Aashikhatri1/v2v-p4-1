@@ -15,7 +15,7 @@ prompt4 = prompts.prompt4
 get_user_info_prompt = prompts.get_user_info_prompt
 final_sub_sub_category_prompt = prompts.final_sub_sub_category_prompt
 ask_question_prompt = prompts.ask_question_prompt
-
+create_db_query_prompt = prompts.create_db_query_prompt
 
 # Load environment variables from .env file
 load_dotenv()
@@ -269,6 +269,41 @@ def summarise_chat_history(chat_history):
         return content
     else:
         return chat_history
+
+
+def create_db_query(rooms_data, info, chat_history, query, create_db_query_prompt):
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                final_sub_sub_category_prompt 
+                + f'Options: {str(sub_category)}'
+            ),
+        }
+    ]
+
+    messages.append({"role": "user", "content": f"user query: {query}"})
+
+    response_stream = openai.ChatCompletion.create(
+        model=model_name,
+        messages=messages,
+        api_base="https://api.perplexity.ai",
+        api_key=PPLX_API_KEY,
+        stream=True,
+    )
+
+    for response in response_stream:
+        if "choices" in response:
+            content = response["choices"][0]["message"]["content"]
+
+    if content.strip():
+        pattern = r"\{.*?\}"
+        matches = re.findall(pattern, content, re.DOTALL)
+        matches = json.loads(matches[0])
+        print("matches: ", matches)
+        return matches
+
+    return str(matches)
 
 def response_type(query, category, chat_history):
     # Assuming category now includes 'QuestionType'

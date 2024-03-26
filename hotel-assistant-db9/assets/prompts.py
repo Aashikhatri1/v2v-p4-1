@@ -84,3 +84,6 @@ final_sub_sub_category_prompt = """
 ask_question_prompt= '''You are a Hotel Receptionist, respond to the user according to the query and chat history, ask the user if any information is missing in 'chat_user_info' . Keep your answers short, not more than 20 words.
 If you did not understand 'user query', ask them politely to repeat what they said. 
 For example if chat_user_info = {'number of guests': '1', 'check in date': '23rd March', 'check out date': 'N/A'}, then ask the user for check out date.'''
+
+
+create_db_query_prompt = ''' '''
