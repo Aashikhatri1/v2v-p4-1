@@ -6,7 +6,7 @@ import json
 
 # csv2json.convert_csv_to_json('data.csv')
 
-# import speech_to_text
+import speech_to_text
 import part2_new
 from async_llama2 import llama_get_category
 from playFiles import playAudioFile
@@ -17,8 +17,8 @@ prompt2 = prompts.prompt2
 def chat_with_user():
     chat_history = []
     while True:
-        # query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
-        query = input('user: ')
+        query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
+        # query = input('user: ')
         if query:
             print('query:', query)
             

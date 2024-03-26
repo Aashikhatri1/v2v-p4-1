@@ -43,8 +43,8 @@ audio_thread.start()
 def chat_with_user():
     chat_history = []
     while True:
-        # query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
-        query = input('user: ')
+        query = speech_to_text.transcribe_stream()  # Captures spoken input from the user.
+        # query = input('user: ')
         if query:
             print('query:', query)
             
@@ -81,8 +81,8 @@ def chat_with_user():
             chat_history = part2_new.response_type(query, category, chat_history)
             print(chat_history)
 
-            if len(chat_history) > 5:
-                chat_history = chat_history[-5:]
+            if len(chat_history) > 6:
+                chat_history = chat_history[-6:]
                 print('New chat history:', chat_history)
 
 
