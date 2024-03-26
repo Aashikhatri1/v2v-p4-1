@@ -1,0 +1,191 @@
+Start speaking...
+query: I want to in your hotel, one fifteen March.
+['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}']
+['{\n"Type": "2",\n"FillerNo": "2/3",\n"QuestionType": "DB"\n}']
+4.823238
+category_filler: [['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2/3",\n"QuestionType": "DB"\n}']]
+Processing text to extract details...
+Playing audio file: assets/fillers/cat2fillerno2/3.wav
+Error playing audio file assets/fillers/cat2fillerno2/3.wav: Error opening 'assets/fillers/cat2fillerno2/3.wav': System error.
+category_filler: [['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2/3",\n"QuestionType": "DB"\n}']]
+type_value: 2
+filler_no: 2/3
+Category: Reservations
+Sub_Category: Reservation
+QuestionType: DB
+DB Inquiry
+Result JSON: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+sub_sub_category_list: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+matches:  {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'Modify', 'Response': 'Please provide more information such as the number of guests and the type of room you would like to book.'}
+final_sub_sub_category: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'Modify', 'Response': 'Please provide more 
+information such as the number of guests and the type of room you would like to book.'}
+criteria: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'Modify', 'Response': 'Please provide more information such as the number of guests and the type of room you would like to book.'}
+info: [{'Information Required From Client': 'Reservation Details,New check-in date,New check-out date\n', 'Sample Answer': "To change your reservation dates, please provide your booking ID and the new dates you're requesting."}]
+content:  Here's a JSON object with the information required from the client, based on the user query and chat history:
+
+{
+"Reservation Details": "One fifteen March",
+"New check-in date": "2023-03-15",
+"New check-out date": "N/A"
+}
+
+Explanation:
+
+* "Reservation Details" field contains the user's query, which is "one fifteen March".
+* "New check-in date" field contains the date mentioned in the user's query, which is "2023-03-15".
+* "New check-out date" field contains "N/A" since the user did not provide a check-out date in their query.
+matches:  {'Reservation Details': 'One fifteen March', 'New check-in date': '2023-03-15', 'New check-out date': 'N/A'}
+chat_user_info:  {'Reservation Details': 'One fifteen March', 'New check-in date': '2023-03-15', 'New check-out date': 'N/A'}
+Sure, I'd be happy to help you with that! Can you please provide me with some more information such as the number of guests, room type, and any specific requests or preferences you may have? Additionally, would you like to book a room for the 15th of March only, or for a longer period of time?
+[{'role': 'user', 'content': 'I want to in your hotel, one fifteen March.'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some more information such as the number of guests, room type, and any specific requests or preferences you may have? Additionally, would you like to book a room for the 15th of March only, or for a longer period of time?"}]
+Start speaking...
+query: Fifteenth of March only, a number of guests will be one.
+['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}']
+['{\n"Type": "2",\n"FillerNo": "2/3",\n"QuestionType": "DB"\n}']
+4.538599
+category_filler: [['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2/3",\n"QuestionType": "DB"\n}']]
+Processing text to extract details...
+Playing audio file: assets/fillers/cat2fillerno2/3.wav
+Error playing audio file assets/fillers/cat2fillerno2/3.wav: Error opening 'assets/fillers/cat2fillerno2/3.wav': System error.
+category_filler: [['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2/3",\n"QuestionType": "DB"\n}']]
+type_value: 2
+filler_no: 2/3
+Category: Reservations
+Sub_Category: Reservation
+QuestionType: DB
+DB Inquiry
+Result JSON: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+sub_sub_category_list: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+matches:  {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'No. of rooms'}
+final_sub_sub_category: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'No. of rooms'}
+criteria: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'No. of rooms'}
+info: [{'Information Required From Client': 'Check-in and Check-out Dates,Number of Rooms', 'Sample Answer': "Yes, you can typically book more than one room at a time, depending on availability and the hotel's booking policies."}]
+content:  Here's the JSON object with the information required from the client:
+
+{
+"number of guests": 1,
+"check-in date": "2023-03-15",
+"check-out date": "N/A"
+}
+
+The information was obtained from the user's query and chat history. Since the user mentioned that they want to book a room for the 15th of March only, the check-out date is not provided. Also, the number of guests is set to 1 as the user mentioned that there will be one guest.
+matches:  {'number of guests': 1, 'check-in date': '2023-03-15', 'check-out date': 'N/A'}
+chat_user_info:  {'number of guests': 1, 'check-in date': '2023-03-15', 'check-out date': 'N/A'}
+Great! For a single guest on March 15th, we have a few options available. We have Superior Rooms with Park View and Pool View, Taj Club Suites with Park View and Pool View, and Luxury Suites with Pool View and Garden View.
+
+Our Superior Rooms with Park View are available for $150 per night. We have 5 rooms available for this rate.
+
+Our Superior Rooms with Pool View are available for $180 per night. We have 3 rooms available for this rate.
+
+Our Taj Club Suites with Park View are available for $250 per night. We have 4 rooms available for this rate.
+
+Our Taj Club Suites with Pool View are available for $280 per night. We have 3 rooms available for this rate.
+
+Our Luxury Suites with Pool View are available for $350 per night. We have 2 rooms available for this rate.
+
+Our Luxury Suites with Garden View are available for $300 per night. We have 1 room available for this rate.
+
+Would you like me to book a room for you? If so, which room type and rate would you like to book?
+[{'role': 'user', 'content': 'I want to in your hotel, one fifteen March.'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some more information such as the number of guests, room type, and any specific requests or preferences you may have? Additionally, would you like to book a room for the 15th of March only, or for a longer period of time?"}, {'role': 'user', 'content': 'Fifteenth of March only, a number of guests will be one.'}, {'role': 
+'assistant', 'content': 'Great! For a single guest on March 15th, we have a few options available. We have Superior Rooms with Park View and Pool View, Taj Club Suites with Park View and Pool View, and Luxury Suites with Pool View and Garden View.\n\nOur Superior Rooms with Park View are available for $150 per night. We have 5 rooms available for this rate.\n\nOur Superior Rooms with Pool View are available for $180 per night. We have 3 rooms available for this rate.\n\nOur Taj Club Suites with Park View are available for $250 per night. We have 4 rooms available for this rate.\n\nOur Taj Club Suites with Pool View are available for $280 per night. We have 3 rooms available for this rate.\n\nOur Luxury Suites with Pool View are available for $350 per night. We have 2 rooms available for this rate.\n\nOur Luxury Suites with Garden View are available for $300 per night. We have 1 room available for this rate.\n\nWould you like me to book a room for you? If so, which room type and rate would you like to book?'}]
+Start speaking...

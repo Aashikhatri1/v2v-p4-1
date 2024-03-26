@@ -1,0 +1,72 @@
+Room,Availability,Booking,,Room,Availability,,,,,,,,,,,,,,
+Room,Room type,Booking,,Room,Room type,,,,,Hotel,Policy,Check In/Check Out time,,Hotel,Policy,,,,
+Room,Room type,Rates,,,,,,,,Hotel,Services,Wi-Fi,,Hotel,Services,,,,
+Room,Room type,specific view,,Reservations,Reservation,,,,,Hotel,Policy,Pets,,Hotel,Attractions,,,,
+Room,Room type,room descriptions,,Reservations,Payment/offer,,,,,Hotel,Attractions,Nearby attractions,,Hotel,Check In/Check Out,,,,
+,,,,,,,,,,Hotel,Policy,Smoking,,Hotel,Accessible,,,,
+,,,,Amenities,Services,,,,,Hotel,Check In/Check Out,early check-in,,Hotel,Fitness,,,Room,Reservation
+Amenities,Services,Wi-Fi,,Amenities,Parking,,,,,Hotel,Services,Parking,,Hotel,Restaurants/Club,,,Room,Cancel/Refund
+Amenities,Parking,Parking,,Amenities,Accessible,,,,,Hotel,Services,Cab Service,,Hotel,Parking,,,Room,Reservation
+Amenities,Accessible,Accessible facilities,,Amenities,Fitness,,,,,Hotel,Accessible,Accessible facilities,,Hotel,House Keeping,,,Room,Services
+Amenities,Accessible,Accessible features,,,,,,,,,,,,Hotel,Attractions,,,Room,Room type
+Amenities,Fitness,Gym,,Policies,Cancel/Refund,,,,,Hotel Services,Services,Babysitting,,Hotel,Transportation,,,Room,Room type
+Amenities,Fitness,Yoga classes,,Policies,Check In/Check Out,,,,,Hotel Services,Services,Cribs/baby cots,,,,,,Room,Reservation
+Amenities,Services,Wi-Fi,,Policies,Services,,,,,,,,,Hotel Services,Services,,,Room,Cancel/Refund
+Amenities,Services,Swimming Pool,,Policies,Policy,,,,,Room,Reservation,Booking,,,,,,Room,Payment/offer
+Amenities,Fitness,Yoga classes,,,,,,,,Room,Cancel/Refund,Cancellation,,Room,Reservation,,,Room,Room type
+Amenities,Fitness,Yoga classes,,Customer Account,Payment/offer,,,,,Room,Reservation,Modify,,Room,Cancel/Refund,,,Room,Reservation
+Amenities,Fitness,Yoga classes,,Customer Account,Customer Account,,,,,Room,Services,Extra bed,,Room,Services,,,Room,Reservation
+Amenities,Parking,vehicle charging,,,,,,,,Room,Room type,Booking,,Room,Room type,,,Room,Services
+,,,,Feedback,Feedback,,,,,Room,Room type,Rates,,Room,Reservation,,,Room,Services
+,,,,,,,,,,Room,Reservation,reservation,,Room,Payment/offer,,,,
+Customer Account,Payment/offer,Invoice,,Food,Restaurants/Club,,,,,Room,Cancel/Refund,Cancellation,,Room,Room type,,,,
+Customer Account,Payment/offer,Stay charges,,,,,,,,Room,Payment/offer,Payment methods,,,,,,,
+Customer Account,Customer Account,Refund Status,,Hotel Services,Transportation,,,,,Room,Room type,room descriptions,,,,,,,
+Customer Account,Customer Account,My reservations,,Hotel Services,Services,,,,,Room,Reservation,No. of rooms,,,,,,,
+,,,,Hotel Services,House Keeping,,,,,Room,Reservation,Reservation confirmation,,,,,,,
+Feedback,Feedback,Complaint,,,,,,,,Room,Services,Room service,,,,,,,
+,,,,Nearby Attractions/needs,Attractions,,,,,Room,Services,Room service,,,,,,,
+Food,Restaurants/Club,Club,,Nearby Attractions/needs,Services,,,,,,,,,,,,,,
+Food,Restaurants/Club,Club,,,,,,,,Hotel,Fitness,Gym,,,,,,,
+Food,Restaurants/Club,Restaurants,,,,,,,,Hotel,Restaurants/Club,Club,,,,,,,
+Food,Restaurants/Club,Restaurants,,,,,,,,Hotel,Parking,vehicle charging,,,,,,,
+,,,,,,,,,,Hotel,House Keeping,laundry,,,,,,,
+,,,,,,,,,,Hotel,Attractions,Tourism,,,,,,,
+Hotel Services,Transportation,cab service,,,,,,,,Hotel,Transportation,Public transport,,,,,,,
+Hotel Services,Services,Storage,,,,,,,,,,,,,,,,,
+Hotel Services,Services,Babysitting,,,,,,,,,,,,,,,,,
+Hotel Services,Services,Cribs/baby cots,,,,,,,,,,,,,,,,,
+Hotel Services,House Keeping,laundry,,,,,,,,,,,,,,,,,
+Hotel Services,House Keeping,laundry,,,,,,,,,,,,,,,,,
+Hotel Services,Transportation,Public transport,,,,,,,,,,,,,,,,,
+Hotel Services,Transportation,cab service,,,,,,,,,,,,,,,,,
+Hotel Services,Services,Room service,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,nearby attractions,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Tours,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Services,Childcare,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Tourism,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Tourism,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Tourism,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Shopping,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Entertainment,,,,,,,,,,,,,,,,,
+Nearby Attractions/needs,Attractions,Sports,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Policies,Cancel/Refund,Cancellation,,,,,,,,,,,,,,,,,
+Policies,Cancel/Refund,Refund,,,,,,,,,,,,,,,,,
+Policies,Check In/Check Out,Check In/Check Out time,,,,,,,,,,,,,,,,,
+Policies,Services,Extra bed,,,,,,,,,,,,,,,,,
+Policies,Policy,Pets,,,,,,,,,,,,,,,,,
+Policies,Policy,Smoking,,,,,,,,,,,,,,,,,
+Policies,Check In/Check Out,early chcek-in,,,,,,,,,,,,,,,,,
+Policies,Cancel/Refund,Cancellation,,,,,,,,,,,,,,,,,
+Policies,Services,Room service,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Reservations,Reservation,Modify,,,,,,,,,,,,,,,,,
+Reservations,Payment/offer,Discounts,,,,,,,,,,,,,,,,,
+Reservations,Reservation,reservation,,,,,,,,,,,,,,,,,
+Reservations,Payment/offer,Payment methods,,,,,,,,,,,,,,,,,
+Reservations,Reservation,No. of rooms,,,,,,,,,,,,,,,,,
+Reservations,Reservation,Reservation confirmation,,,,,,,,,,,,,,,,,

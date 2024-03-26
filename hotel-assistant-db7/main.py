@@ -6,7 +6,7 @@ import json
 
 # csv2json.convert_csv_to_json('data.csv')
 
-import speech_to_text
+# import speech_to_text
 import part2_new
 from async_llama2 import llama_get_category
 from playFiles import playAudioFile
@@ -55,8 +55,8 @@ def chat_with_user():
             chat_history = part2_new.response_type(query, category, chat_history)
             print(chat_history)
 
-            if len(chat_history) > 5:
-                chat_history = chat_history[-5:]
+            if len(chat_history) > 6:
+                chat_history = chat_history[-6:]
                 print('New chat history:', chat_history)
 
 chat_with_user()

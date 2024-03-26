@@ -15,7 +15,8 @@ import part2_new
 import prompts
 prompt1 = prompts.prompt1
 prompt2 = prompts.prompt2
-
+import sounddevice as sd
+import soundfile as sf
 # import csv2json
 # csv2json.convert_csv_to_json('data.csv')
 

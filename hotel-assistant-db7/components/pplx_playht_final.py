@@ -8,7 +8,9 @@ import sounddevice as sd
 from pyht import Client
 from pyht.client import TTSOptions
 import time
-import re
+import re 
+import grpc
+
 
 # Load environment variables
 load_dotenv()
@@ -26,20 +28,45 @@ options = TTSOptions(voice="s3://voice-cloning-zero-shot/2bc098a7-c1fc-4b32-9452
 sample_rate = 24000 #20000
 
 # Function to play audio from text
+# def play_audio_from_text(text):
+#     stream = sd.OutputStream(samplerate=sample_rate, channels=1, dtype='float32')
+#     stream.start()
+
+#     for chunk in client.tts(text, options):
+#         audio_data = np.frombuffer(chunk, dtype=np.int16).astype(np.float32) / np.iinfo(np.int16).max
+#         stream.write(audio_data)
+
+#     stream.stop()
+#     stream.close()
+
 def play_audio_from_text(text):
-    stream = sd.OutputStream(samplerate=sample_rate, channels=1, dtype='float32')
-    stream.start()
+    success = False
+    attempts = 0
 
-    for chunk in client.tts(text, options):
-        audio_data = np.frombuffer(chunk, dtype=np.int16).astype(np.float32) / np.iinfo(np.int16).max
-        stream.write(audio_data)
+    while not success and attempts < 3:  # Try up to 3 times
+        try:
+            stream = sd.OutputStream(samplerate=sample_rate, channels=1, dtype='float32')
+            stream.start()
 
-    stream.stop()
-    stream.close()
+            for chunk in client.tts(text, options):
+                audio_data = np.frombuffer(chunk, dtype=np.int16).astype(np.float32) / np.iinfo(np.int16).max
+                stream.write(audio_data)
+            print('audio Played:', text)
+
+            stream.stop()
+            stream.close()
+            success = True  # If we reach this line, it means no error was raised
+
+        except grpc._channel._MultiThreadedRendezvous as e:
+            if e._state.code == grpc.StatusCode.RESOURCE_EXHAUSTED:
+                attempts += 1
+                print(f"Resource exhausted, retrying... Attempt {attempts}")
+                time.sleep(0.5)  # Wait for 1 second before retrying
+            else:
+                raise  
 
 processed_sentences = set()
 sentence_end_pattern = re.compile(r'(?<=[.?!])\s')
-
 
 def handle_gpt_response(full_content):
     sentences = re.split(r'[.!?]', full_content)
@@ -48,6 +75,7 @@ def handle_gpt_response(full_content):
     for sentence in sentences:
         if sentence not in processed_sentences:
             play_audio_from_text(sentence)
+            print('sentence sent to playht: ', sentence)
             processed_sentences.add(sentence)
 
 # Function to handle chat with user and then play response as audio
@@ -65,12 +93,12 @@ def ask_question(chat_user_info, chat_history, query, ask_question_prompt):
             "role": "system",
             "content": (
                 ask_question_prompt +  
-                f'Chat History: {str(chat_history)}'+
-                f'Chat user info: {str(chat_user_info)}'
+                f'Chat History: {str(chat_history)}'
+                
                 
             )
         },
-        {"role": "user", "content": query if query else "Default query text."}
+        {"role": "user", "content": f'chat_user_info: {str(chat_user_info)}' + ', User query: '+ query }
     ]
 
     response_stream = openai.ChatCompletion.create(

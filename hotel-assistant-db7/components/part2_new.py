@@ -157,7 +157,7 @@ def final_sub_sub_category(sub_category, query,final_sub_sub_category_prompt):
             "role": "system",
             "content": (
                 final_sub_sub_category_prompt 
-                + str(sub_category)
+                + f'Options: {str(sub_category)}'
             ),
         }
     ]
@@ -213,12 +213,39 @@ def get_user_info(info, chat_history, query, get_user_info_prompt):
         if "choices" in response:
             content = response["choices"][0]["message"]["content"]
 
+    # if content.strip():
+    #     print("content: ", content)
+    #     pattern = r"\{.*?\}"
+    #     matches = re.findall(pattern, content, re.DOTALL)
+    #     print("matches1: ", matches)
+
+    #     matches = json.loads(matches[0])
+    #     print("matches: ", matches)
+    #     return matches
+
     if content.strip():
         print("content: ", content)
         pattern = r"\{.*?\}"
+
         matches = re.findall(pattern, content, re.DOTALL)
-        matches = json.loads(matches[0])
+        print("matches1: ", matches)
+        print(type(matches))
+
+        matches = matches[0]
+        print("matches2: ", matches)
+        print(type(matches))
+
+        matches = json.loads(matches)
         print("matches: ", matches)
+        print(type(matches))
+
+        # try:
+        #     matches = json.loads(matches)
+  
+        # except json.JSONDecodeError:
+
+        #     matches = matches.get("Information Required From Client", {})
+        #     print("handling JSON error...")
         return matches
 
     return str(matches)
@@ -262,25 +289,25 @@ def response_type(query, category, chat_history):
                         chat_user_info = get_user_info(info, chat_history, query, get_user_info_prompt)
                         print('chat_user_info: ', chat_user_info)
 
-                        if 'N/A' in chat_user_info:
+                        if 'N/A' in chat_user_info.values():
                             # call llama
                             print('Get missing info from user')
                             chat_history= pplx_playht_final.ask_question(chat_user_info, chat_history, query, ask_question_prompt)
                             
-                        else:
-                            # play filler
-                            # filename = 'assets/fillers/giveMeAFewSeconds.wav'
-                            print('No missing info')
-                            filename = 'assets/fillers/cat2fillerno1.wav'
-                            d, fs = sf.read(filename)
-                            sd.play(d, fs)
-
-                            chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
-                            # pass
                     else:
-                        print('value is none')
+                        # play filler
+                        # filename = 'assets/fillers/giveMeAFewSeconds.wav'
+                        print('No missing info')
+                        filename = 'assets/fillers/cat2fillerno1.wav'
+                        d, fs = sf.read(filename)
+                        sd.play(d, fs)
+
                         chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
-        
+                        # pass
+                else:
+                    print('Information is not required from client.')
+                    chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+    
         else:
             chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
         

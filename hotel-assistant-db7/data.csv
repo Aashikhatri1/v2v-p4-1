@@ -58,3 +58,4 @@ Hotel,Transportation,Public transport,FAQs,NA,Is there a nearby metro station?,"
 Hotel,Transportation,cab service,FAQs,NA,Are taxi services readily available from the hotel?,Taxi services are readily available from the hotel; our staff can assist you in arranging transportation as needed.
 Room,Services,Room service,FAQs,NA,Can I order food from outside the hotel through room service?,"Unfortunately, we only provide food from our hotel's restaurant for room service. We can provide you the utensils to enjoy your food"
 Room,Services,Room service,FAQs,NA,Do you offer 24-hour room service?,"Yes, we offer 24-hour room service for our guests."
+Hotel,Reservation,Booking,Database,"Check-in date, Check-out date, Number of Rooms",Can you check if there are any rooms available?,"Sure sir/mam, I would be happy to provide you with the details. can you please help me with the check-in and check-out dates, along with the number of rooms needed."

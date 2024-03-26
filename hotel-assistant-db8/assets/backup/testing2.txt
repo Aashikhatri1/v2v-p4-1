@@ -1,0 +1,316 @@
+Start speaking...
+query: I want to book a room and your hot hotel
+['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}']
+['{\n"Type": "2",\n"FillerNo": "2",\n"QuestionType": "DB"\n}']
+4.299669
+category_filler: [['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2",\n"QuestionType": "DB"\n}']]
+Processing text to extract details...
+Playing audio file: assets/fillers/cat2fillerno2.wav
+category_filler: [['{\n"Category": "Reservations",\n"Sub Category": "Reservation",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2",\n"QuestionType": "DB"\n}']]
+type_value: 2
+filler_no: 2
+Category: Reservations
+Sub_Category: Reservation
+QuestionType: DB
+DB Inquiry
+Result JSON: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+sub_sub_category_list: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+matches:  {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'Modify'}
+final_sub_sub_category: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'Modify'}
+criteria: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'Modify'}
+info: [{'Information Required From Client': 'Reservation Details,New check-in date,New check-out date\n', 'Sample Answer': "To change your reservation dates, please provide your booking ID and the new dates you're requesting."}]
+content:  Here's a possible JSON response based on the user query and chat history:
+
+{
+"info1": "Booking ID: N/A",
+"info2": "New check-in date: N/A",
+"info3": "New check-out date: N/A"
+}
+
+Explanation:
+
+* Since the user has not provided any information in the previous part of the conversation, all the values in the JSON response are set to "N/A".
+* The "Booking ID" field is set to "N/A" because the user has not provided any booking ID.
+* The "New check-in date" and "New check-out date" fields are set to "N/A" because the user has not provided any new dates for check-in or check-out.
+
+Note: This response is just an example and may need to be adjusted based on the specific requirements of the system you're working with.
+matches:  {'info1': 'Booking ID: N/A', 'info2': 'New check-in date: N/A', 'info3': 'New check-out date: N/A'}
+chat_user_info:  {'info1': 'Booking ID: N/A', 'info2': 'New check-in date: N/A', 'info3': 'New check-out date: N/A'}
+No missing info
+Sure, I'd be happy to help you with that! Can you please provide me with some information about your booking preferences, such as the date of arrival and departure, the 
+number of guests, and the type of room you're interested in? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?
+[{'role': 'user', 'content': 'I want to book a room and your hot hotel'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some information about your booking preferences, such as the date of arrival and departure, the number of guests, and the type of room you're interested in? 
+Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}]
+Start speaking...
+query: I want a room with the bar view.
+['{\n"Category": "Room",\n"Sub Category": "Room type",\n"General Talk": "Yes"\n}']
+['{\n"Type": "2",\n"FillerNo": "2",\n"QuestionType": "DB"\n}']
+4.136802
+category_filler: [['{\n"Category": "Room",\n"Sub Category": "Room type",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2",\n"QuestionType": "DB"\n}']]    
+Processing text to extract details...
+Playing audio file: assets/fillers/cat2fillerno2.wav
+category_filler: [['{\n"Category": "Room",\n"Sub Category": "Room type",\n"General Talk": "Yes"\n}'], ['{\n"Type": "2",\n"FillerNo": "2",\n"QuestionType": "DB"\n}']]
+type_value: 2
+filler_no: 2
+Category: Room
+Sub_Category: Room type
+QuestionType: DB
+DB Inquiry
+Result JSON: [
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "Booking",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "Rates",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "specific view",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "room descriptions",
+        "QuestionType": "DB"
+    }
+]
+sub_sub_category_list: [
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "Booking",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "Rates",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "specific view",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Room",
+        "Sub Category": "Room type",
+        "Sub Sub Category": "room descriptions",
+        "QuestionType": "DB"
+    }
+]
+matches:  {'QuestionType': 'DB', 'Category': 'Room', 'Sub Category': 'Room type', 'Sub Sub Category': 'specific view'}
+final_sub_sub_category: {'QuestionType': 'DB', 'Category': 'Room', 'Sub Category': 'Room type', 'Sub Sub Category': 'specific view'}
+criteria: {'QuestionType': 'DB', 'Category': 'Room', 'Sub Category': 'Room type', 'Sub Sub Category': 'specific view'}
+info: [{'Information Required From Client': 'Room Preference,Check-in/check-out Date\n', 'Sample Answer': "We understand that preferences for views or room locations can enhance your overall experience during your stay. While we cannot guarantee specific requests, we always strive to accommodate our guests' preferences to the best of our ability, subject to availability."}]
+content:  Here's a JSON object that contains the information required from the client based on the chat history and user query:
+
+{
+"number of guests": 1,
+"check-in date": "N/A",
+"check-out date": "N/A",
+"room preference": "bar view"
+}
+
+Explanation:
+
+* Number of guests: 1 (based on the user query)
+* Check-in date: N/A (not provided in the chat history or user query)
+* Check-out date: N/A (not provided in the chat history or user query)
+* Room preference: bar view (based on the user query)
+
+Note that the JSON object contains only the information that is relevant to the client's request and the information provided in the chat history. The "Sample Answer" field is not included in the JSON object.
+matches:  {'number of guests': 1, 'check-in date': 'N/A', 'check-out date': 'N/A', 'room preference': 'bar view'}
+chat_user_info:  {'number of guests': 1, 'check-in date': 'N/A', 'check-out date': 'N/A', 'room preference': 'bar view'}
+No missing info
+Sure, I'd be happy to help you with that! Can you please provide me with some more information about your booking preferences, such as the date of arrival and departure, and the number of guests? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?
+[{'role': 'user', 'content': 'I want to book a room and your hot hotel'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some information about your booking preferences, such as the date of arrival and departure, the number of guests, and the type of room you're interested in? 
+Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}, {'role': 'user', 'content': 'I want a room with the bar view.'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some more information about your booking preferences, such as the date of arrival and departure, and the number of guests? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}]
+Start speaking...
+query: Sure, the number of guests will be one and the check date will be five March and check out date will be
+['{"Type": "2", "FillerNo": "2", "QuestionType": "DB"}']
+['{"Category": "Reservations", "Sub Category": "Reservation", "General Talk": "Yes"}', '{"Category": "Reservations", "Sub Category": "Reservation", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Parking", "General Talk": "No"}', '{"Category": "Amenities", "Sub Category": "Fitness", "General Talk": "No"}', '{"Category": "Amenities", "Sub Category": "Services", "General Talk": "Yes"}', '{"Category": "Customer Account", "Sub Category": "Payment/offer", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Cancel/Refund", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Check In/Check Out", "General Talk": "Yes"}', '{"Category": "Reservations", "Sub Category": "Payment/offer", "General Talk": "Yes"}', '{"Category": "Hotel Services", "Sub Category": "Services", "General Talk": "Yes"}', '{"Category": "Food", "Sub Category": "Restaurants/Club", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Parking", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Fitness", "General Talk": "Yes"}', '{"Category": "Hotel Services", "Sub Category": "Transportation", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Policy", "General Talk": "Yes"}', '{"Category": "Nearby Attractions/needs", "Sub Category": "Attractions", "General Talk": "Yes"}']
+15.324035
+category_filler: [['{"Type": "2", "FillerNo": "2", "QuestionType": "DB"}'], ['{"Category": "Reservations", "Sub Category": "Reservation", "General Talk": "Yes"}', '{"Category": "Reservations", "Sub Category": "Reservation", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Parking", "General Talk": "No"}', '{"Category": "Amenities", "Sub Category": "Fitness", "General Talk": "No"}', '{"Category": "Amenities", "Sub Category": "Services", "General Talk": "Yes"}', '{"Category": "Customer Account", "Sub Category": "Payment/offer", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Cancel/Refund", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Check In/Check Out", "General Talk": "Yes"}', '{"Category": "Reservations", "Sub Category": "Payment/offer", "General Talk": "Yes"}', '{"Category": "Hotel Services", "Sub Category": "Services", "General Talk": "Yes"}', '{"Category": "Food", "Sub Category": "Restaurants/Club", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Parking", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Fitness", "General Talk": "Yes"}', '{"Category": "Hotel Services", "Sub Category": "Transportation", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Policy", "General Talk": "Yes"}', '{"Category": "Nearby Attractions/needs", "Sub Category": "Attractions", "General Talk": "Yes"}']]
+Processing text to extract details...
+Playing audio file: assets/fillers/cat2fillerno2.wav
+category_filler: [['{"Type": "2", "FillerNo": "2", "QuestionType": "DB"}'], ['{"Category": "Reservations", "Sub Category": "Reservation", "General Talk": "Yes"}', '{"Category": "Reservations", "Sub Category": "Reservation", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Parking", "General Talk": "No"}', '{"Category": "Amenities", "Sub Category": "Fitness", "General Talk": "No"}', '{"Category": "Amenities", "Sub Category": "Services", "General Talk": "Yes"}', '{"Category": "Customer Account", "Sub Category": "Payment/offer", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Cancel/Refund", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Check In/Check Out", "General Talk": "Yes"}', '{"Category": "Reservations", "Sub Category": "Payment/offer", "General Talk": "Yes"}', '{"Category": "Hotel Services", "Sub Category": "Services", "General Talk": "Yes"}', '{"Category": "Food", "Sub Category": "Restaurants/Club", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Parking", "General Talk": "Yes"}', '{"Category": "Amenities", "Sub Category": "Fitness", "General Talk": "Yes"}', '{"Category": "Hotel Services", "Sub Category": "Transportation", "General Talk": "Yes"}', '{"Category": "Policies", "Sub Category": "Policy", "General Talk": "Yes"}', '{"Category": "Nearby Attractions/needs", "Sub Category": "Attractions", "General Talk": "Yes"}']]
+type_value: 2
+filler_no: 2
+Category: Reservations
+Sub_Category: Reservation
+QuestionType: DB
+DB Inquiry
+Result JSON: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+sub_sub_category_list: [
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Modify",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "reservation",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "No. of rooms",
+        "QuestionType": "DB"
+    },
+    {
+        "Category": "Reservations",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Reservation confirmation",
+        "QuestionType": "DB"
+    }
+]
+matches:  {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'No. of rooms'}
+final_sub_sub_category: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'No. of rooms'}
+criteria: {'QuestionType': 'DB', 'Category': 'Reservations', 'Sub Category': 'Reservation', 'Sub Sub Category': 'No. of rooms'}
+info: [{'Information Required From Client': 'Check-in and Check-out Dates,Number of Rooms', 'Sample Answer': "Yes, you can typically book more than one room at a time, depending on availability and the hotel's booking policies."}]
+content:  Here is the JSON object with the information required from the client:
+
+{
+"number of guests": 1,
+"check-in date": "2023-03-05",
+"check-out date": "N/A"
+}
+
+The chat history is:
+
+[
+{
+"role": "user",
+"content": "I want to book a room at your hot hotel"
+},
+{
+"role": "assistant",
+"content": "Sure, I'd be happy to help you with that! Can you please provide me with some information about your booking preferences, such as the date of arrival and departure, the number of guests, and the type of room you're interested in? Additionally, do you have any specific requests or preferences, such as a room with a park view 
+or a pool view?"
+},
+{
+"role": "user",
+"content": "I want a room with a bar view."
+},
+{
+"role": "assistant",
+"content": "Sure, I'd be happy to help you with that! Can you please provide me with some more information about your booking preferences, such as the date of arrival and departure, and the number of guests? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"
+}
+]
+
+Based on the chat history, the user has provided the following information:
+
+* Number of guests: 1
+* Check-in date: March 5
+* Check-out date: Not provided
+* Type of room: Not provided
+* Specific requests or preferences: A room with a bar view
+
+The JSON object with the information required from the client would be:
+
+{
+"number of guests": 1,
+"check-in date": "2023-03-05",
+"check-out date": "N/A",
+"type of room": "N/A",
+"specific requests or preferences": "A room with a bar view"
+}
+matches:  {'number of guests': 1, 'check-in date': '2023-03-05', 'check-out date': 'N/A'}
+chat_user_info:  {'number of guests': 1, 'check-in date': '2023-03-05', 'check-out date': 'N/A'}
+No missing info
+Sure, I can assist you with that. Based on your request, it seems like you're looking for a room with a bar view. Can you please confirm the check-in and check-out dates for your booking? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?
+[{'role': 'user', 'content': 'I want to book a room and your hot hotel'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some information about your booking preferences, such as the date of arrival and departure, the number of guests, and the type of room you're interested in? 
+Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}, {'role': 'user', 'content': 'I want a room with the bar view.'}, {'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some more information about your booking preferences, such as the date of arrival and departure, and the number of guests? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}, {'role': 'user', 'content': 'Sure, the number of guests will be one and the check date will be five March and check out date will be'}, {'role': 'assistant', 'content': "Sure, I can assist you with that. Based on your request, it seems like you're looking for a room with a bar view. Can you please confirm the check-in 
+and check-out dates for your booking? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}]
+New chat history: [{'role': 'assistant', 'content': "Sure, I'd be happy to help you with that! Can you please provide me with some information about your booking preferences, such as the date of arrival and departure, the number of guests, and the type of room you're interested in? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}, {'role': 'user', 'content': 'I want a room with the bar view.'}, {'role': 'assistant', 'content': "Sure, I'd 
+be happy to help you with that! Can you please provide me with some more information about your booking preferences, such as the date of arrival and departure, and the number of guests? Additionally, do you have any specific requests or preferences, such as a room with a park view or a pool view?"}, {'role': 'user', 'content': 'Sure, the number of guests will be one and the check date will be five March and check out date will be'}, {'role': 'assistant', 'content': "Sure, I can assist you with that. Based on your request, it seems like you're looking for a room with a bar view. Can you please confirm the check-in and check-out dates for your booking? Additionally, do 
+you have any specific requests or preferences, such as a room with a park view or a pool view?"}]
+Start speaking...

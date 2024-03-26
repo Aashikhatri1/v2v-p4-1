@@ -421,5 +421,14 @@
         "Information Required From Client": "NA",
         "Question": "Do you offer 24-hour room service?",
         "Sample Answer": "Yes, we offer 24-hour room service for our guests."
+    },
+    {
+        "Category": "Hotel",
+        "Sub Category": "Reservation",
+        "Sub Sub Category": "Booking",
+        "Question type": "Database",
+        "Information Required From Client": "Check-in date, Check-out date, Number of Rooms",
+        "Question": "Can you check if there are any rooms available?",
+        "Sample Answer": "Sure sir/mam, I would be happy to provide you with the details. can you please help me with the check-in and check-out dates, along with the number of rooms needed."
     }
 ]
