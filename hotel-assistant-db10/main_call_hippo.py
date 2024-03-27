@@ -1,7 +1,6 @@
 import sys
 sys.path.append('./components')
 import json
-import speech_to_text
 from async_llama2 import llama_get_category
 from playFiles import playAudioFile
 import webbrowser
@@ -10,7 +9,7 @@ import time
 import threading
 from queue import Queue
 from datetime import datetime
-
+from speech_to_text_new import transcribe_stream
 sys.path.append('./assets')
 import part2_new
 import prompts
