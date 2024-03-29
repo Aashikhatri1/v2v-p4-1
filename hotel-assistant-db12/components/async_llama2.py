@@ -50,10 +50,11 @@ def get_category(query, system_message):
         pattern = r"\{.*?\}"
         matches = re.findall(pattern, content, re.DOTALL)
 
+        # if matches and 'No' not in matches.values:
         if matches:
             return matches
         else:
-    
+            print('--> Sending query to Llama again')
             chat_completion = client.chat.completions.create(
                 messages=messages,
                 model= model_name,
@@ -74,7 +75,7 @@ def get_category(query, system_message):
                 if matches:
                     return matches
                 else:
-                    
+                    print('--> Sending query to GPT')
                     filename = 'assets/fillers/cat1fillerno3.wav'
                     d, fs = sf.read(filename)
                     sd.play(d, fs)        
@@ -86,6 +87,7 @@ def get_category(query, system_message):
 
 def run_get_category(query, system_message):
     result = get_category(query, system_message)
+    print('result', result)
     return result
 
 
@@ -110,15 +112,16 @@ def llama_get_category(query, chat_history, prompt1, prompt2, output_filename):
 
     print((datetime.now() - start_time).total_seconds())
 
-
+    base, extension = output_filename.rsplit('.', 1)
+    detailed_filename = f"{base}_detailed.{extension}"
     # print(f"Total time taken: {total_time} seconds")
 
-    print_and_save('LlamaPerplexity', output_filename)
-    print_and_save(f'|prompt| {prompt1}{query} | ', output_filename)
-    print_and_save(f'|prompt| {prompt1}{query} | ', output_filename)
-    print_and_save(f'|output| {results} | ', output_filename)
-    print_and_save(str(datetime.now()), output_filename)
-    print_and_save('\n', output_filename)
+    print_and_save('LlamaPerplexity', detailed_filename)
+    print_and_save(f'|prompt| {prompt1}{query} | ', detailed_filename)
+    print_and_save(f'|prompt| {prompt1}{query} | ', detailed_filename)
+    print_and_save(f'|output| {results} | ', detailed_filename)
+    print_and_save(str(datetime.now()), detailed_filename)
+    print_and_save('\n', detailed_filename)
 
     return results
 

@@ -10,6 +10,9 @@ import soundfile as sf
 # import csv2json
 
 # csv2json.convert_csv_to_json('data.csv')
+# import csv2json
+# csv2json.convert_csv_to_json('assets/roomav.csv', 'roomav.json')
+
 
 from speech_to_text_new import transcribe_stream
 import part2_new
@@ -41,11 +44,19 @@ def chat_with_user():
 
         # query = input('user: ')
         if query:
-            print('query:', query)
+            print('\n query:', query)
             print_and_save('LlamaPerplexity', output_filename)
             print_and_save(f'|User| {query} | ', output_filename)
             print_and_save(str(datetime.now()), output_filename)
             print_and_save('\n', output_filename)
+
+            base, extension = output_filename.rsplit('.', 1)
+            detailed_filename = f"{base}_detailed.{extension}"
+
+            print_and_save('LlamaPerplexity', detailed_filename)
+            print_and_save(f'|User| {query} | ',detailed_filename)
+            print_and_save(str(datetime.now()), detailed_filename)
+            print_and_save('\n', detailed_filename)
             
             category_filler = llama_get_category(query, chat_history, prompt1, prompt2, output_filename)  # Processes the query to categorize and determine the filler response.
             print('category_filler:', category_filler)

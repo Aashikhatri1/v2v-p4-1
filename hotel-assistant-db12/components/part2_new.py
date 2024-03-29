@@ -2,7 +2,8 @@ import json
 import soundfile as sf
 import sounddevice as sd
 # from groq_playht import ask_question, final_answer, rooms_availability_final_answer
-from pplx_playht_final import ask_question, final_answer, rooms_availability_final_answer
+# from pplx_playht_final import ask_question, final_answer, rooms_availability_final_answer
+from pplx_playht import ask_question, final_answer, rooms_availability_final_answer
 import re
 import openai
 from dotenv import load_dotenv
@@ -13,6 +14,9 @@ sys.path.append('./assets')
 import prompts
 prompt3 = prompts.prompt3
 prompt4 = prompts.prompt4
+from log import print_and_save
+from datetime import datetime
+
 get_user_info_prompt = prompts.get_user_info_prompt
 final_sub_sub_category_prompt = prompts.final_sub_sub_category_prompt
 ask_question_prompt = prompts.ask_question_prompt
@@ -158,7 +162,7 @@ def find_information_db(data, criteria):
 
     return results
 
-def final_sub_sub_category(sub_category, query,final_sub_sub_category_prompt):
+def final_sub_sub_category(sub_category, query,final_sub_sub_category_prompt, output_filename):
     messages = [
         {
             "role": "system",
@@ -182,6 +186,13 @@ def final_sub_sub_category(sub_category, query,final_sub_sub_category_prompt):
 
     content = chat_completion.choices[0].message.content
     
+    base, extension = output_filename.rsplit('.', 1)
+    detailed_filename = f"{base}_detailed.{extension}"
+
+    print_and_save('LlamaPerplexity', detailed_filename)
+    print_and_save(f'|prompt| {messages} | ', detailed_filename)
+    print_and_save(str(datetime.now()), detailed_filename)
+    print_and_save('\n', detailed_filename)
 
     if content.strip():
         pattern = r"\{.*?\}"
@@ -190,6 +201,7 @@ def final_sub_sub_category(sub_category, query,final_sub_sub_category_prompt):
         print("matches: ", matches)
         return matches
 
+    
     return str(matches)
 
 def get_user_info(info, chat_history, query, get_user_info_prompt):
@@ -292,7 +304,7 @@ def check_room_availability(rooms_data, dates):
     return available_rooms
 
 
-def create_db_query(info, chat_history, query, create_db_query_prompt):
+def create_db_query(info, chat_history, query, create_db_query_prompt, output_filename):
     messages = [
         {
             "role": "system",
@@ -330,6 +342,15 @@ def create_db_query(info, chat_history, query, create_db_query_prompt):
         dates = re.findall(r'\d{2}-[A-Za-z]{3}-\d{2}', list_str)
 
         print('dates:',dates)
+
+    base, extension = output_filename.rsplit('.', 1)
+    detailed_filename = f"{base}_detailed.{extension}"
+
+    print_and_save('LlamaPerplexity', detailed_filename)
+    print_and_save(f'|DB QUERY DATES| {dates} | ', detailed_filename)
+    print_and_save(str(datetime.now()), detailed_filename)
+    print_and_save('\n', detailed_filename)
+
     return dates
 
 def filter_by_dates(rooms_data, dates):
@@ -339,6 +360,9 @@ def filter_by_dates(rooms_data, dates):
 
 def response_type(query, category, chat_history, output_filename):
 
+    base, extension = output_filename.rsplit('.', 1)
+    detailed_filename = f"{base}_detailed.{extension}"
+    
     with open("room.json", "r") as file:
         rooms_data = json.load(file)
     # Assuming category now includes 'QuestionType'
@@ -352,6 +376,12 @@ def response_type(query, category, chat_history, output_filename):
         else:
             info = find_information(data, category)  
             print('info: ', info)
+
+            print_and_save('LlamaPerplexity', detailed_filename)
+            print_and_save(f'|FAQ INFO| {info} | ', detailed_filename)
+            print_and_save(str(datetime.now()), detailed_filename)
+            print_and_save('\n', detailed_filename)
+
             chat_history = final_answer(info, chat_history, query, prompt3, output_filename)
 
     elif question_type == "DB":
@@ -362,12 +392,22 @@ def response_type(query, category, chat_history, output_filename):
        
         sub_sub_category_list = json.loads(sub_sub_category_list)
 
-        final_sub_sub_category_ = final_sub_sub_category(sub_sub_category_list, query, final_sub_sub_category_prompt)
+        final_sub_sub_category_ = final_sub_sub_category(sub_sub_category_list, query, final_sub_sub_category_prompt, output_filename)
+
+        print_and_save('LlamaPerplexity', detailed_filename)
+        print_and_save(f'|output| {final_sub_sub_category_} | ', detailed_filename)
+        print_and_save(str(datetime.now()), detailed_filename)
+        print_and_save('\n', detailed_filename)
 
         print('final_sub_sub_category:', final_sub_sub_category_)
         
         info = find_information_db(data, final_sub_sub_category_)
         print('db info:',info)
+
+        print_and_save('LlamaPerplexity', detailed_filename)
+        print_and_save(f'|DB INFO| {info} | ', detailed_filename)
+        print_and_save(str(datetime.now()), detailed_filename)
+        print_and_save('\n', detailed_filename)
         
         if info != []:
             for info_item in info:
@@ -377,6 +417,11 @@ def response_type(query, category, chat_history, output_filename):
                     if value is not None and value != 'NA':
                         chat_user_info = get_user_info(info, chat_history, query, get_user_info_prompt)
                         print('chat_user_info: ', chat_user_info)
+
+                        print_and_save('LlamaPerplexity', detailed_filename)
+                        print_and_save(f'|GET USER INFO| {chat_user_info} | ', detailed_filename)
+                        print_and_save(str(datetime.now()), detailed_filename)
+                        print_and_save('\n', detailed_filename)
 
                         if 'N/A' in chat_user_info.values():
                             # call llama
@@ -391,7 +436,7 @@ def response_type(query, category, chat_history, output_filename):
                             d, fs = sf.read(filename)
                             sd.play(d, fs)
                             
-                            dates = create_db_query(info, chat_history, query, create_db_query_prompt)
+                            dates = create_db_query(info, chat_history, query, create_db_query_prompt, output_filename)
                             print(dates)
                             filtered_rooms_data = filter_by_dates(rooms_data, dates)
                             print('filtered_rooms_data: ',filtered_rooms_data)

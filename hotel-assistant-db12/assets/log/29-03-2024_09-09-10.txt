@@ -1,6 +1,0 @@
-LlamaPerplexity|User| I want to book a another for twenty third March. | 2024-03-29 09:09:23.282350
-LlamaPerplexity|Bot| Sure, I'd be happy to help you with that! Can you please provide me with the number of guests who will be staying in the room? | 2024-03-29 09:09:38.361535
-LlamaPerplexity|User| The number guess gonna be five. | 2024-03-29 09:09:43.698512
-LlamaPerplexity|Bot| Great! We have noted that you want 5 guests. Can you please provide the check-out date? | 2024-03-29 09:09:53.660112
-LlamaPerplexity|User| It twenty fourth March. | 2024-03-29 09:09:59.248809
-LlamaPerplexity|Bot| Sure, I can assist you with booking a room for March 23rd. Can you please confirm the number of guests and the check-out date? | 2024-03-29 09:10:12.465368

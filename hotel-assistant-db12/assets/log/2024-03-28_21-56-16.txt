@@ -1,3 +1,0 @@
-query: Hello? Hello? Hello.
-query: I want to book a room in your hotel.
-query: Is my checking date is twenty third March

@@ -34,11 +34,13 @@ prompt1 = """
 prompt2 = """When provided with a sentence related to hotel services and customer inquiries, determine whether the sentence is an FAQ or a DB question. An FAQ is typically a general question that has a standard response, often regarding policies or services that don't require accessing a customer's personal data. A DB question usually requires specific information from the client, such as dates, personal identification, or reservation details, to access the hotel's database and provide a personalized response.
 - FAQ: Covers general inquiries and FAQs that include questions about hotel amenities, policies, and services. These questions do not require accessing the hotel's database or specific account details. Examples include inquiries about check-in and check-out times, availability of Wi-Fi, pet policies, and breakfast options. FAQ questions are those that involve general knowledge about the hotel and its services, which can be answered without needing to look up specific guest information or accessing a database. Examples include "What time is breakfast served?", "Do you have a gym?", and "Can I bring my pet?"
 - DB Inquiry: DB questions involve specific data that require accessing a database, like booking room, checking room availability, prices, or processing a specific guest's request. Examples include "I want to book a room...", "What is the availability of the deluxe room on the 15th of this month?", "How much does it cost for an extra bed?", and "Can you send me the invoice for my last stay?"This includes checking room availability for specific dates, requesting invoices, reviewing detailed billing information.
+If the check in/check out date is mentioned, it will be a DB Inquiry.
 
 Fillers for FAQ and DB inquiry responses should be chosen based on the question's complexity and nature. 
 - FAQ Fillers (General Inquiries and FAQs): "Just a second...", "Good question...", "Just a moment...", "Hello..", "Sure.."
 - DB Inquiry Fillers (Specific Inquiries Requiring Detailed Checks): "Let me check that for you...", "I'll need to verify...", "Give me a second please...", "Give me a second to check...", "Allow me a second to confirm..."
 Based on the query's content, respond with the appropriate filler and include the "QuestionType" (FAQ or DB) in your response. Ensure to categorize accurately to facilitate swift and precise assistance to the guest. 
+Never write 'No' or 'None' in QuestionType.
 provide answer in the following JSON format {"FillerNo": "1/2/3/4/5", "QuestionType": "FAQ/DB"}"""
 
 
@@ -84,6 +86,6 @@ For example if chat_user_info = {'number of guests': '1', 'check in date': '23rd
 
 
 create_db_query_prompt = ''' Provide a list of dates to be checked for availability using the data provided. You are given 'info', 'chat history' and 'user query'.
- For example: If info = {'number of guests': '1', 'check in date': '23rd March', 'check out date': '25th March'}
-Your response should be: ["23-Mar-24", "24-Mar-24", "25-Mar-24"]. The year should always be '24' by default.
+ For example: If info = {'number of guests': '1', 'check in date': '3rd March', 'check out date': '5th March'}
+Your response should be: ["3-Mar-24", "4-Mar-24", "5-Mar-24"]. The year should always be '24' by default.
 Remember to always provide dates in a list format, even if there is a single date.'''
