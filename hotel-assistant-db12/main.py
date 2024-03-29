@@ -5,6 +5,8 @@ import pyautogui as pg
 sys.path.append('./components')
 sys.path.append('./assets')
 from log import print_and_save
+import sounddevice as sd
+import soundfile as sf
 # import csv2json
 
 # csv2json.convert_csv_to_json('data.csv')
@@ -21,7 +23,9 @@ prompt2 = prompts.prompt2
 def chat_with_user():
     output_filename = 'assets/log/'+ datetime.now().strftime('%d-%m-%Y_%H-%M-%S') + '.txt'
     chat_history = []
-    # chat_history = [{'role': 'user', 'content': 'Are there any amenities available?'}, {'role': 'assistant', 'content': 'Yes, we have a range of amenities available, including a fitness center, a business center, and a swimming pool. We also offer laundry services, a concierge service, and a tour desk. Additionally, we have a childcare service available, located just a short distance from our hotel. Would you like more information about any of these amenities?'}]
+    filename = "assets/intro.wav"
+    data, fs = sf.read(filename)
+    sd.play(data, fs)
     while True:
 
         end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence = 0.98)  # path to your end call button image
@@ -77,4 +81,4 @@ def chat_with_user():
             print(chat_history)
 
 
-chat_with_user()
+# chat_with_user()
