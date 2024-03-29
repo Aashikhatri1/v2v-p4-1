@@ -1,7 +1,8 @@
 import json
 import soundfile as sf
 import sounddevice as sd
-import pplx_playht_final
+# from groq_playht import ask_question, final_answer, rooms_availability_final_answer
+from pplx_playht_final import ask_question, final_answer, rooms_availability_final_answer
 import re
 import openai
 from dotenv import load_dotenv
@@ -25,7 +26,13 @@ PPLX_API_KEY = os.environ.get("PPLX_API_KEY")
 os.environ["PPLX_API_KEY"] = PPLX_API_KEY
 
 model_name = "llama-2-70b-chat"
+from groq import Groq
 
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+
+client = Groq(
+    api_key=GROQ_API_KEY,
+)
 
 # Path to your JSON file
 filename = "data.json"
@@ -164,17 +171,17 @@ def final_sub_sub_category(sub_category, query,final_sub_sub_category_prompt):
 
     messages.append({"role": "user", "content": f"user query: {query}"})
 
-    response_stream = openai.ChatCompletion.create(
-        model=model_name,
+    chat_completion = client.chat.completions.create(
         messages=messages,
-        api_base="https://api.perplexity.ai",
-        api_key=PPLX_API_KEY,
-        stream=True,
+        model= "mixtral-8x7b-32768",
+        temperature=0.5,
+        max_tokens=32768,
+        top_p=1,
+        stop=None,
     )
 
-    for response in response_stream:
-        if "choices" in response:
-            content = response["choices"][0]["message"]["content"]
+    content = chat_completion.choices[0].message.content
+    
 
     if content.strip():
         pattern = r"\{.*?\}"
@@ -237,13 +244,13 @@ def get_user_info(info, chat_history, query, get_user_info_prompt):
     return str(matches)
 
 def summarise_chat_history(chat_history):
-
-    if len(chat_history) > 3:
+    # if len(chat_history) > 3:
+    if len(chat_history) > 0:
         messages = [
             {
                 "role": "system",
                 "content": (
-                    'Summarise the given chat history in 150 words or less.'
+                    'Summarise the given chat history in 150 words or less. Retain the important information such as date of booking, no. of guests etc. Start with "The user" not "A User".'
                     
                 ),
             }
@@ -284,21 +291,6 @@ def check_room_availability(rooms_data, dates):
     
     return available_rooms
 
-# import ast
-
-# def extract_dates_from_content(content):
-#     try:
-#         # Attempt to directly evaluate the content as a Python literal.
-#         dates_list = ast.literal_eval(content)
-#         if isinstance(dates_list, list):
-#             print("Extracted list:", dates_list)
-#             return dates_list
-#         else:
-#             print("Content is not a list.")
-#             return None
-#     except (ValueError, SyntaxError) as e:
-#         print("Error evaluating content:", e)
-#         return None
 
 def create_db_query(info, chat_history, query, create_db_query_prompt):
     messages = [
@@ -345,7 +337,7 @@ def filter_by_dates(rooms_data, dates):
     return filtered_data
 
 
-def response_type(query, category, chat_history):
+def response_type(query, category, chat_history, output_filename):
 
     with open("room.json", "r") as file:
         rooms_data = json.load(file)
@@ -356,11 +348,11 @@ def response_type(query, category, chat_history):
         print("General Inquiry - FAQ")
 
         if ContextGiven == "No":
-            chat_history = pplx_playht_final.final_answer('', chat_history, query, prompt3)
+            chat_history = final_answer('', chat_history, query, prompt3, output_filename)
         else:
             info = find_information(data, category)  
             print('info: ', info)
-            chat_history = pplx_playht_final.final_answer(info, chat_history, query, prompt3)
+            chat_history = final_answer(info, chat_history, query, prompt3, output_filename)
 
     elif question_type == "DB":
         print("DB Inquiry")
@@ -389,7 +381,7 @@ def response_type(query, category, chat_history):
                         if 'N/A' in chat_user_info.values():
                             # call llama
                             print('Get missing info from user')
-                            chat_history= pplx_playht_final.ask_question(chat_user_info, chat_history, query, ask_question_prompt)
+                            chat_history= ask_question(chat_user_info, chat_history, query, ask_question_prompt, output_filename)
                             
                         else:
                             # play filler
@@ -404,18 +396,18 @@ def response_type(query, category, chat_history):
                             filtered_rooms_data = filter_by_dates(rooms_data, dates)
                             print('filtered_rooms_data: ',filtered_rooms_data)
                              
-                            chat_history = pplx_playht_final.rooms_availability_final_answer(filtered_rooms_data, info, chat_history, query, prompt4)
+                            chat_history = rooms_availability_final_answer(filtered_rooms_data, info, chat_history, query, prompt4, output_filename)
                             
                     else:
                         print('Information is not required from client.')
-                        chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+                        chat_history = rooms_availability_final_answer("", info, chat_history, query, prompt4, output_filename)
                 
                 else:
                     print('Information is not required from client.')
-                    chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+                    chat_history = rooms_availability_final_answer("", info, chat_history, query, prompt4, output_filename)
 
         else:
-            chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+            chat_history = rooms_availability_final_answer("", info, chat_history, query, prompt4, output_filename)
         
 
     return chat_history

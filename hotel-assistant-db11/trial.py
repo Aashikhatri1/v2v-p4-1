@@ -1,7 +1,9 @@
+
+
 import json
 import soundfile as sf
 import sounddevice as sd
-import pplx_playht_final
+
 import re
 import openai
 from dotenv import load_dotenv
@@ -9,6 +11,8 @@ import os
 import requests
 import sys
 sys.path.append('./assets')
+sys.path.append('./components')
+import pplx_playht_final
 import prompts
 prompt3 = prompts.prompt3
 prompt4 = prompts.prompt4
@@ -284,21 +288,21 @@ def check_room_availability(rooms_data, dates):
     
     return available_rooms
 
-# import ast
+import ast
 
-# def extract_dates_from_content(content):
-#     try:
-#         # Attempt to directly evaluate the content as a Python literal.
-#         dates_list = ast.literal_eval(content)
-#         if isinstance(dates_list, list):
-#             print("Extracted list:", dates_list)
-#             return dates_list
-#         else:
-#             print("Content is not a list.")
-#             return None
-#     except (ValueError, SyntaxError) as e:
-#         print("Error evaluating content:", e)
-#         return None
+def extract_dates_from_content(content):
+    try:
+        # Attempt to directly evaluate the content as a Python literal.
+        dates_list = ast.literal_eval(content)
+        if isinstance(dates_list, list):
+            print("Extracted list:", dates_list)
+            return dates_list
+        else:
+            print("Content is not a list.")
+            return None
+    except (ValueError, SyntaxError) as e:
+        print("Error evaluating content:", e)
+        return None
 
 def create_db_query(info, chat_history, query, create_db_query_prompt):
     messages = [
@@ -329,7 +333,16 @@ def create_db_query(info, chat_history, query, create_db_query_prompt):
 
     if content.strip():
         print('create_db_query content' , content)
-        
+        # pattern = r"\{.*?\}"
+        # extracted_dates = extract_dates_from_content(content)
+        # # matches = re.findall(pattern, content, re.DOTALL)
+        # # print('create_db_query matches ' , matches)
+        # # matches = json.loads(matches[0])
+        # matches = extracted_dates
+        # print("matches: ", matches)
+        # return matches
+
+
         list_start = content.find('["')
         list_end = content.find('"]') + 2
         list_str = content[list_start:list_end]
@@ -339,10 +352,6 @@ def create_db_query(info, chat_history, query, create_db_query_prompt):
 
         print('dates:',dates)
     return dates
-
-def filter_by_dates(rooms_data, dates):
-    filtered_data = [entry for entry in rooms_data if entry["Date"] in dates]
-    return filtered_data
 
 
 def response_type(query, category, chat_history):
@@ -399,23 +408,51 @@ def response_type(query, category, chat_history):
                             d, fs = sf.read(filename)
                             sd.play(d, fs)
                             
-                            dates = create_db_query(info, chat_history, query, create_db_query_prompt)
-                            print(dates)
-                            filtered_rooms_data = filter_by_dates(rooms_data, dates)
-                            print('filtered_rooms_data: ',filtered_rooms_data)
-                             
-                            chat_history = pplx_playht_final.rooms_availability_final_answer(filtered_rooms_data, info, chat_history, query, prompt4)
-                            
+                            dates_to_check = create_db_query(info, chat_history, query, create_db_query_prompt)
+                            available_rooms_by_date = check_room_availability(rooms_data, dates_to_check)
+                            rooms_data = json.dumps(available_rooms_by_date, indent=2)
+                            print(rooms_data)
+                            # rooms_data = 
+                            chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+                            # pass
                     else:
                         print('Information is not required from client.')
                         chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
                 
                 else:
-                    print('Information is not required from client.')
-                    chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
-
+                        print('Information is not required from client.')
+                        chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+    
         else:
             chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
         
 
     return chat_history
+
+
+
+info = {'number of guests': '5', 'check-in date': '2023-03-19', 'check-out date': '2023-03-20'}
+chat_history = [{'role': 'user', 'content': 'Hi. I want to book a room your on nineteenth March.'}, {'role': 'assistant', 'content': "Welcome to our hotel! I'm happy to help you with your booking. Can you please provide me with your check-out date?"}]
+query = "A number of guests will be five and checkout out date will be twenty March."
+dates = create_db_query(info, chat_history, query, create_db_query_prompt)
+print(dates)
+print(type(dates))
+
+# available_rooms_by_date = check_room_availability(rooms_data, dates)
+# rooms_data = json.dumps(available_rooms_by_date, indent=2)
+# print(rooms_data)
+# # rooms_data = 
+# chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+
+
+def filter_by_dates(rooms_data, dates):
+    filtered_data = [entry for entry in rooms_data if entry["Date"] in dates]
+    return filtered_data
+
+# Use the function to get data for the dates of interest
+filtered_rooms_data = filter_by_dates(rooms_data, dates)
+print('filtered_rooms_data: ',filtered_rooms_data)
+# Print or use the filtered data
+# print(json.dumps(filtered_data, indent=4))
+
+# chat_history = pplx_playht_final.rooms_availability_final_answer(filtered_rooms_data, info, chat_history, query, prompt4)

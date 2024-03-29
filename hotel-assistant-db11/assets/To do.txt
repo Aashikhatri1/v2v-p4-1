@@ -1,0 +1,8 @@
+To do
+json format
+log
+Filler
+groq
+Aura tts
+
+LlamaPerplexity|Output|Help me with a booking|User|<time>|<No>

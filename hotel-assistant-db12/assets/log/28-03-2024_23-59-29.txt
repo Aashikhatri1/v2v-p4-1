@@ -1,0 +1,6 @@
+LlamaPerplexity|User| I want a book room for twenty third March. | 2024-03-28 23:59:37.726266
+LlamaPerplexity|User| I'll check out the twenty fourth March. | 2024-03-28 23:59:58.985833
+LlamaPerplexity|User| Twenty fourth March. | 2024-03-29 00:00:13.181396
+LlamaPerplexity|User| Do you have Wifi? | 2024-03-29 00:00:33.585863
+LlamaPerplexity|User| Do you have parking facilities? | 2024-03-29 00:01:20.280854
+LlamaPerplexity|User| Are there any nearby tourist attractions nearby. | 2024-03-29 00:01:44.786851

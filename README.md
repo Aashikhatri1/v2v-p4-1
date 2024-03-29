@@ -17,4 +17,6 @@ db6 - Satvinder Sir sheet
 
 db7 prompt conf, prompt changes
 
-db8 chat history summarisation))
+db8 chat history summarisation
+db11 groq, some prompt changes + some filler changes
+db12 log))
