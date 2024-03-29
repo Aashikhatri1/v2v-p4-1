@@ -67,7 +67,7 @@ def chat_with_user():
             print_and_save(str(datetime.now()), output_filename)
             print_and_save('\n', output_filename)
             
-            category_filler = llama_get_category(query, chat_history, prompt1, prompt2)  # Processes the query to categorize and determine the filler response.
+            category_filler = llama_get_category(query, chat_history, prompt1, prompt2, output_filename)  # Processes the query to categorize and determine the filler response.
             print('category_filler:', category_filler)
             
             filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
