@@ -1,0 +1,75 @@
+{
+    "instruction": "As an application, your role involves matching user queries with the most appropriate category and subcategory from a specified below.  For queries without specific context ('yes', 'thank you', etc.), use 'No' for 'Context Given'. Otherwise, use 'Yes'. Ensure no fields are left empty.  The categories and subcategories include: Hotel (Policy, Services, Attractions, Check In/Check Out, Accessible, Fitness, Restaurants/Club, Parking, House Keeping, Transportation, Reservation), Hotel Services (Services), Room (Reservation, Cancel/Refund, Services, Room type, Payment/offer). Response format needs to be in {Category: \u003cCategory from table\u003e,Sub Category: \u003cSubCategory from table\u003e, Context Given: Yes/No}",
+    
+    },
+    "categoriesTable": [
+        {
+            "Category": "Hotel",
+            "SubCategory": "Policy"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Services"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Attractions"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Check In/Check Out"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Accessible"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Fitness"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Restaurants/Club"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Parking"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "House Keeping"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Transportation"
+        },
+        {
+            "Category": "Hotel",
+            "SubCategory": "Reservation"
+        },
+        {
+            "Category": "Hotel Services",
+            "SubCategory": "Services"
+        },
+        {
+            "Category": "Room",
+            "SubCategory": "Reservation"
+        },
+        {
+            "Category": "Room",
+            "SubCategory": "Cancel/Refund"
+        },
+        {
+            "Category": "Room",
+            "SubCategory": "Services"
+        },
+        {
+            "Category": "Room",
+            "SubCategory": "Room type"
+        },
+        {
+            "Category": "Room",
+            "SubCategory": "Payment/offer"
+        }
+    ]
+}

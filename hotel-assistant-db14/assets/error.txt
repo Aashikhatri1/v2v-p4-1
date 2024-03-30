@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    chat_with_user()
+  File "main.py", line 64, in chat_with_user
+    filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db14\./components\playFiles.py", line 32, in playAudioFile
+    filler_no, Category, Sub_Category, QuestionType = getjson(answer)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db14\./components\playFiles.py", line 11, in getjson
+    category_dict = json.loads(item[0].replace('\n', ''))
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
