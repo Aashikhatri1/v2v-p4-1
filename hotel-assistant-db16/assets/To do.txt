@@ -1,0 +1,24 @@
+To do
+json format
+log
+Filler
+groq
+Aura tts
+
+LlamaPerplexity|Output|Help me with a booking|User|<time>|<No>
+
+
+LlamaPerplexity|Prompt|Give me Category|Bot|<time>|<No>
+LlamaPerplexity|Output|{category….}|Bot|<time>|<No>
+LlamaPerplexity|Output|Help me with a booking|User|<time>|<No>
+
+LlamaPerplexity|User|Output|Help me with a booking|<time>|
+LlamaPerplexity|Bot|Prompt|Give me Category|<time>|
+
+LlamaPerplexity|User|I want to book a hotel| 28-3-24...
+LlamaPerplexity|Prompt|......| 28-3-24...
+LlamaPerplexity|Output|.......| 28-3-24...
+LlamaPerplexity|Bot|Output|Sure, let me help you with that|28-3-24...
+
+
+Chat history me: Then the user said: {user query}
