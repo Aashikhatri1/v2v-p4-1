@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    chat_with_user()
+  File "main.py", line 59, in chat_with_user
+    chat_history = part2_new.response_type(query, category, chat_history)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db8\./components\part2_new.py", line 327, in response_type
+    chat_history = pplx_playht_final.rooms_availability_final_answer(rooms_data, info, chat_history, query, prompt4)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db8\./components\pplx_playht_final.py", line 214, in rooms_availability_final_answer
+    handle_gpt_response(last_part)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db8\./components\pplx_playht_final.py", line 77, in handle_gpt_response
+    play_audio_from_text(sentence)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db8\./components\pplx_playht_final.py", line 51, in play_audio_from_text
+    for chunk in client.tts(text, options):
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\site-packages\pyht\client.py", line 153, in tts
+    for item in response:
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\site-packages\grpc\_channel.py", line 541, in __next__
+    return self._next()
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\site-packages\grpc\_channel.py", line 967, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+        status = StatusCode.INVALID_ARGUMENT
+        details = "the maximum allowable number of lines per request is 6, received 8"
+        debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"the maximum allowable number of lines per request is 6, received 8", grpc_status:3, created_time:"2024-03-25T17:31:18.9642986+00:00"}"
+>

@@ -221,70 +221,88 @@ def get_user_info(info, chat_history, query, get_user_info_prompt):
 
     messages.append({"role": "user", "content": f"user query: {query}"})
 
-    response_stream = openai.ChatCompletion.create(
-        model=model_name,
-        messages=messages,
-        api_base="https://api.perplexity.ai",
-        api_key=PPLX_API_KEY,
-        stream=True,
-    )
+    
 
-    for response in response_stream:
-        if "choices" in response:
-            content = response["choices"][0]["message"]["content"]
+# def get_user_info(info, chat_history, query, get_user_info_prompt):
+#     messages = [
+#         {
+#             "role": "system",
+#             "content": (
+                
+                
+#                 f'Info: {str(info)}' +
+#                 get_user_info_prompt +
+#                 f'Chat History: {str(chat_history)}'
+#             ),
+#         }
+#     ]
+
+#     messages.append({"role": "user", "content": f"user query: {query}"})
+
+#     response_stream = openai.ChatCompletion.create(
+#         model=model_name,
+#         messages=messages,
+#         api_base="https://api.perplexity.ai",
+#         api_key=PPLX_API_KEY,
+#         stream=True,
+#     )
+
+#     for response in response_stream:
+#         if "choices" in response:
+#             content = response["choices"][0]["message"]["content"]
 
     
 
-    if content.strip():
-        print("content: ", content)
-        pattern = r"\{.*?\}"
+#     if content.strip():
+#         print("content: ", content)
+#         pattern = r"\{.*?\}"
 
-        matches = re.findall(pattern, content, re.DOTALL)
-        print("matches1: ", matches)
-        print(type(matches))
+#         matches = re.findall(pattern, content, re.DOTALL)
+#         print("matches1: ", matches)
+#         print(type(matches))
 
-        matches = matches[0]
-        print("matches2: ", matches)
-        print(type(matches))
+#         matches = matches[0]
+#         print("matches2: ", matches)
+#         print(type(matches))
 
-        matches = json.loads(matches)
-        print("matches: ", matches)
-        print(type(matches))
+#         matches = json.loads(matches)
+#         print("matches: ", matches)
+#         print(type(matches))
 
-        if not 'Information Required From Client' in matches:     
-            return matches
-        else:
-            response_stream = openai.ChatCompletion.create(
-                model=model_name,
-                messages=messages,
-                api_base="https://api.perplexity.ai",
-                api_key=PPLX_API_KEY,
-                stream=True,
-            )
+#         if not 'Information Required From Client' in matches:     
+#             return matches
+#         else:
+#             response_stream = openai.ChatCompletion.create(
+#                 model=model_name,
+#                 messages=messages,
+#                 api_base="https://api.perplexity.ai",
+#                 api_key=PPLX_API_KEY,
+#                 stream=True,
+#             )
 
-            for response in response_stream:
-                if "choices" in response:
-                    content = response["choices"][0]["message"]["content"]
+#             for response in response_stream:
+#                 if "choices" in response:
+#                     content = response["choices"][0]["message"]["content"]
 
-                if content.strip():
-                    print("content: ", content)
-                    pattern = r"\{.*?\}"
+#                 if content.strip():
+#                     print("content: ", content)
+#                     pattern = r"\{.*?\}"
 
-                    matches = re.findall(pattern, content, re.DOTALL)
-                    print("matches1: ", matches)
-                    print(type(matches))
+#                     matches = re.findall(pattern, content, re.DOTALL)
+#                     print("matches1: ", matches)
+#                     print(type(matches))
 
-                    matches = matches[0]
-                    print("matches2: ", matches)
-                    print(type(matches))
+#                     matches = matches[0]
+#                     print("matches2: ", matches)
+#                     print(type(matches))
 
-                    matches = json.loads(matches)
-                    print("matches: ", matches)
-                    print(type(matches))
+#                     matches = json.loads(matches)
+#                     print("matches: ", matches)
+#                     print(type(matches))
 
-                    return matches
+#                     return matches
 
-    return str(matches)
+#     return str(matches)
 
 def summarise_chat_history(chat_history):
     # if len(chat_history) > 3:
