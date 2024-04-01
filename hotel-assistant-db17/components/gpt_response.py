@@ -7,7 +7,7 @@ import time
 import re
 import sounddevice as sd
 import soundfile as sf
-
+load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY_GPT")
 if openai_api_key is None:
     raise ValueError("The OPENAI_API_KEY is not set in the environment.")
@@ -16,7 +16,7 @@ model = "gpt-3.5-turbo"
 # Format the prompt as a conversation, if necessary
 
 # Load the environment variables from .env file
-load_dotenv()
+
 
 def gpt_get_category(query, system_message):
 
