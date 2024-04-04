@@ -10,7 +10,7 @@ import pyautogui as pg
 import threading
 import queue  
 import sys
-import sounddevice as sd
+
 sys.path.append('./components')
 from part2_new import summarise_chat_history
 
@@ -148,19 +148,20 @@ def transcribe_stream(chat_history):
 
     print("Start speaking...")
     transcriber = Transcriber()
-    sd.stop()
+    
     loop = asyncio.get_event_loop()
     transcript = loop.run_until_complete(transcriber.run(DEEPGRAM_API_KEY))
     current_transcript =  transcript
-    transcript = last_transcript + " " + transcript
+    if last_transcript is not None:
+     transcript = last_transcript + " " + transcript
     # Store the current transcript as the last transcript
     last_transcript = current_transcript
     # Wait for the background task to complete
     background_thread.join()
-
+    
     # Retrieve the summary from the queue
     summary = summary_queue.get() if not summary_queue.empty() else "Summary not available"
-    print("chat_history******************************************:",summary)
+    print("chat_history******************************************:",transcript)
     return transcript, summary  # Return both the transcript and the summary
 
 # chat_history = [{'role': 'user', 'content': 'Are there any amenities available?'}, {'role': 'assistant', 'content': 'Yes, we have a range of amenities available, including a fitness center, a business center, and a swimming pool. We also offer laundry services, a concierge service, and a tour desk. Additionally, we have a childcare service available, located just a short distance from our hotel. Would you like more information about any of these amenities?'}]

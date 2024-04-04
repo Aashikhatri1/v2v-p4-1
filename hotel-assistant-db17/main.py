@@ -30,7 +30,6 @@ def chat_with_user():
     filename = "assets/intro.wav"
     data, fs = sf.read(filename)
     sd.play(data, fs)
-    # query, chat_history = transcribe_stream(chat_history)
     while True:
 
         end_call = pg.locateOnScreen("assets/buttons/end_call.PNG", confidence = 0.98)  # path to your end call button image
