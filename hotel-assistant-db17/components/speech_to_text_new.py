@@ -20,7 +20,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 CHUNK = 8000
-
+last_transcript = ""
 class Transcriber:
     def __init__(self):
         self.audio_queue = asyncio.Queue()
@@ -76,7 +76,7 @@ class Transcriber:
 
     def check_call_end(self):
         """Check for the call end button."""
-        end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence=0.98)
+        end_call = pg.locateOnScreen("assets/buttons/end_call.PNG", confidence=0.98)
         if end_call:
             print("Call ended")
             self.stop_pushing = True
@@ -133,6 +133,7 @@ def run_summarisation_in_background(chat_history, summary_queue):
     summary_queue.put(summary)  # Put the summary into the queue
 
 def transcribe_stream(chat_history):
+    global last_transcript
     DEEPGRAM_API_KEY = os.getenv('DEEPGRAM_API_KEY')
     if DEEPGRAM_API_KEY is None:
         print("Please set the DEEPGRAM_API_KEY environment variable.")
@@ -150,13 +151,16 @@ def transcribe_stream(chat_history):
     
     loop = asyncio.get_event_loop()
     transcript = loop.run_until_complete(transcriber.run(DEEPGRAM_API_KEY))
-
+    current_transcript =  transcript
+    transcript = last_transcript + " " + transcript
+    # Store the current transcript as the last transcript
+    last_transcript = current_transcript
     # Wait for the background task to complete
     background_thread.join()
 
     # Retrieve the summary from the queue
     summary = summary_queue.get() if not summary_queue.empty() else "Summary not available"
-
+    print("chat_history******************************************:",summary)
     return transcript, summary  # Return both the transcript and the summary
 
 # chat_history = [{'role': 'user', 'content': 'Are there any amenities available?'}, {'role': 'assistant', 'content': 'Yes, we have a range of amenities available, including a fitness center, a business center, and a swimming pool. We also offer laundry services, a concierge service, and a tour desk. Additionally, we have a childcare service available, located just a short distance from our hotel. Would you like more information about any of these amenities?'}]

@@ -1,0 +1,8 @@
+LlamaPerplexity|User| Is there any rooms available? | 2024-04-02 12:16:57.975171
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 12:17:10.525514
+LlamaPerplexity|User| Hello? | 2024-04-02 12:18:17.853069
+LlamaPerplexity|Bot| Hi there! Yes, we have rooms available. Would you like me to check availability for a specific date? | 2024-04-02 12:18:31.504118
+LlamaPerplexity|User| And those brain. | 2024-04-02 12:19:14.752900
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question or provide more context? | 2024-04-02 12:19:33.676915
+LlamaPerplexity|User| Check is there any room available? | 2024-04-02 12:20:46.542036
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question or provide more context? | 2024-04-02 12:20:55.610243

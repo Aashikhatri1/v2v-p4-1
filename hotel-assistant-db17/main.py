@@ -32,7 +32,7 @@ def chat_with_user():
     sd.play(data, fs)
     while True:
 
-        end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence = 0.98)  # path to your end call button image
+        end_call = pg.locateOnScreen("assets/buttons/end_call.PNG", confidence = 0.98)  # path to your end call button image
         if end_call:
             print("Call ended")            
             break
@@ -95,4 +95,4 @@ def chat_with_user():
             print(chat_history)
 
 
-# chat_with_user()
+chat_with_user()

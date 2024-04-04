@@ -1,0 +1,10 @@
+LlamaPerplexity|User| Okay. | 2024-04-02 15:39:10.817011
+LlamaPerplexity|Bot| Sure, I'd be happy to help you with your booking. Can you please provide me with your check-in and check-out dates? | 2024-04-02 15:39:27.367415
+LlamaPerplexity|User| Okay. | 2024-04-02 15:39:31.983450
+LlamaPerplexity|Bot| Sure, I understand. Can you please provide me with your name and contact number? | 2024-04-02 15:39:41.615162
+LlamaPerplexity|User| Okay. | 2024-04-02 15:39:56.742887
+LlamaPerplexity|Bot| Sure, I'd be happy to help you with your booking. Can you please provide me with your check-in and check-out dates? | 2024-04-02 15:39:59.724625
+LlamaPerplexity|User| Okay. | 2024-04-02 15:40:27.761957
+LlamaPerplexity|Bot| Sure, I understand. Can you please provide me with your name and contact number? | 2024-04-02 15:40:32.028525
+LlamaPerplexity|User| Okay. | 2024-04-02 15:41:11.730802
+LlamaPerplexity|Bot| Sure, I understand. Can you please provide me with your check-in and check-out dates? | 2024-04-02 15:41:19.169569

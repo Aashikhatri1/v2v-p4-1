@@ -432,7 +432,10 @@ def filter_by_dates(rooms_data, dates):
 
 
 def response_type(query, category, chat_history, output_filename, chat_user_info):
-
+  negative_words = ["no", "not", "don't", "stop", "cancel"]  # Add more as needed
+  if any(word in query.lower() for word in negative_words):
+    return sys.exit()
+  else:
     base, extension = output_filename.rsplit('.', 1)
     detailed_filename = f"{base}_detailed.{extension}"
     

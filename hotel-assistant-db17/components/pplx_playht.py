@@ -56,13 +56,12 @@ sentence_end_pattern = re.compile(r'(?<=[.?!])\s')
 def handle_gpt_response(full_content):
     sentences = re.split(r'[.!?]', full_content)
     sentences = [s.strip() for s in sentences if s]
-
     for sentence in sentences:
-        if sentence not in processed_sentences:
+        # if sentence not in processed_sentences:
             play_audio_from_text(sentence)
             print('sentence sent to playht: ', sentence)
-            processed_sentences.add(sentence)
-
+            # processed_sentences.add(sentence)
+       
 # Function to handle chat with user and then play response as audio
 def pplx_streaming(messages, chat_history, query, output_filename):
     if query is None:
@@ -97,7 +96,7 @@ def pplx_streaming(messages, chat_history, query, output_filename):
                 # if part:
                 if part and len(part.split()) > 1:
                     # print('part', part)
-                    handle_gpt_response(part + '.')  # Re-add the punctuation for processing
+                    # handle_gpt_response(part + '.')  # Re-add the punctuation for processing
                     processed_content += part + ' '  # Add the processed part to processed_content
 
             # Now handle the last part separately
@@ -105,17 +104,19 @@ def pplx_streaming(messages, chat_history, query, output_filename):
             if last_part:
                 # If the last part ends with a punctuation, process it directly
                 if sentence_end_pattern.search(last_part):
-                    handle_gpt_response(last_part)
+                    # handle_gpt_response(last_part)
                     processed_content += last_part + ' '
                 else:
                     # Otherwise, add it to the sentence buffer to process it later
                     processed_content += last_part + ' '
     if last_part:
         # print(f"Processed part sent to FAISS: '{last_part}'")
-        handle_gpt_response(last_part)
         processed_content += last_part + ' '
 
     # Append only the complete assistant's response to messages
+    print("+=====================+++++++++++++++++++++++++++++++++++++++++");
+    processed_content = content.strip()
+    handle_gpt_response(content.strip())
     if content.strip():
         messages.append({"role": "assistant", "content": content.strip()})
         chat_history.append({"role": "user", "content": query})

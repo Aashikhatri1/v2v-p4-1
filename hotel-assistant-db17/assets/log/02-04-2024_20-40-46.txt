@@ -1,0 +1,5 @@
+LlamaPerplexity|User| Is there any room available for next week | 2024-04-02 20:41:19.337554
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:41:44.473645
+LlamaPerplexity|User| Is there any rooms available for next weekend. | 2024-04-02 20:42:21.027371
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:42:39.707071
+LlamaPerplexity|User| People | 2024-04-02 20:44:03.188080

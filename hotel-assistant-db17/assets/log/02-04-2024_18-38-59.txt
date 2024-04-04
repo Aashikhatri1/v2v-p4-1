@@ -1,0 +1,12 @@
+LlamaPerplexity|User| Okay | 2024-04-02 18:39:13.602110
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat or provide more information? | 2024-04-02 18:39:28.281690
+LlamaPerplexity|User| Okay. | 2024-04-02 18:39:47.150005
+LlamaPerplexity|Bot| Sure, I'd be happy to help. Can you please clarify or provide more information about your query? | 2024-04-02 18:39:57.485799
+LlamaPerplexity|User| Okay. | 2024-04-02 18:40:06.810586
+LlamaPerplexity|Bot| Sure, I'd be happy to help. Can you please clarify or provide more information about your query? Have you checked our available rooms and rates? | 2024-04-02 18:40:19.817349
+LlamaPerplexity|User| Okay. Nine. | 2024-04-02 18:44:15.549333
+LlamaPerplexity|Bot| Sure, I'd be happy to help. Can you please provide me with the check-in and check-out dates for the 9 rooms you're interested in? | 2024-04-02 18:44:26.453398
+LlamaPerplexity|User| Okay. | 2024-04-02 18:44:33.628521
+LlamaPerplexity|Bot| Sure, I'd be happy to help. Can you please provide me with the check-in and check-out dates for the 9 rooms you're interested in? | 2024-04-02 18:44:36.824637
+LlamaPerplexity|User| Okay. Okay. | 2024-04-02 18:45:03.558213
+LlamaPerplexity|Bot| Sure, I'd be happy to help. Can you please provide me with the check-in and check-out dates for the 9 rooms you're interested in? | 2024-04-02 18:45:08.230002

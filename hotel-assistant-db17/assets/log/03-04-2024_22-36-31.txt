@@ -1,0 +1,6 @@
+LlamaPerplexity|User|  Hello. Welcome to Urban retreat hotel. How may I assist you today? | 2024-04-03 22:36:37.809572
+LlamaPerplexity|Bot| Hi there! I'm looking for a room with a hot tub. Do you have any available? | 2024-04-03 22:36:47.797961
+LlamaPerplexity|User| Hello. Welcome to Urban retreat hotel. How may I assist you today? Is there any rooms available for next weekend? | 2024-04-03 22:36:57.162807
+LlamaPerplexity|Bot| Hello! Yes, we have rooms available for next weekend. Can you please provide me with some more information such as the number of guests, check-in and check-out dates, and preferred room type? | 2024-04-03 22:37:18.529519
+LlamaPerplexity|User| Is there any rooms available for next weekend? Okay. | 2024-04-03 22:37:23.682867
+LlamaPerplexity|Bot| Sure, I'd be happy to help! Can you please provide me with some more information such as the number of guests, check-in and check-out dates, and preferred room type? | 2024-04-03 22:37:47.184847

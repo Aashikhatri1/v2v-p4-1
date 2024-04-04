@@ -1,0 +1,16 @@
+LlamaPerplexity|User| Is there any rooms available for next week | 2024-04-02 20:15:43.343462
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:16:17.501634
+LlamaPerplexity|User| Is there any rooms available for next weekend. | 2024-04-02 20:17:09.847735
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:17:31.158463
+LlamaPerplexity|User| You | 2024-04-02 20:18:42.251480
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:19:05.991808
+LlamaPerplexity|User| Can you put the room? | 2024-04-02 20:19:33.712248
+LlamaPerplexity|Bot| Sure, I can assist you with that. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-02 20:20:01.659504
+LlamaPerplexity|User| No. | 2024-04-02 20:20:18.255116
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:20:34.835141
+LlamaPerplexity|User| Center. | 2024-04-02 20:21:33.661678
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question? | 2024-04-02 20:21:52.983166
+LlamaPerplexity|User| Okay | 2024-04-02 20:23:58.413812
+LlamaPerplexity|Bot| Hello! How can I assist you today? Do you have a specific query or request regarding our hotel rooms? | 2024-04-02 20:24:37.942873
+LlamaPerplexity|User| Yeah. | 2024-04-02 20:26:36.986938
+LlamaPerplexity|Bot| Hello! I'm happy to help. Can you please provide me with your check-in and check-out dates, name, and contact number so I can assist you with booking a room? | 2024-04-02 20:27:07.736724

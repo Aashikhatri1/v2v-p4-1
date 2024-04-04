@@ -1,0 +1,13 @@
+LlamaPerplexity|User| R a w, r w t on a. | 2024-04-02 18:48:47.120326
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat or rephrase your question? | 2024-04-02 18:49:09.694276
+LlamaPerplexity|User| Okay. | 2024-04-02 18:49:17.760177
+LlamaPerplexity|Bot| Sure, I'll do my best to help you. Can you please repeat or rephrase your question? | 2024-04-02 18:49:37.139357
+LlamaPerplexity|User| Was gonna put | 2024-04-02 18:50:03.900383
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat or rephrase your question? | 2024-04-02 18:50:25.224703
+LlamaPerplexity|User| I think. | 2024-04-02 18:52:58.517430
+LlamaPerplexity|Bot| Sure, I'll do my best to help you. Can you please repeat or rephrase your question? | 2024-04-02 18:53:22.147835
+LlamaPerplexity|User| Outside an Behind you? | 2024-04-02 18:54:46.125638
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat or rephrase your question? | 2024-04-02 18:55:03.936413
+LlamaPerplexity|User| For | 2024-04-02 18:55:27.284784
+LlamaPerplexity|Bot| Sure, I'll do my best to help you. Can you please repeat or rephrase your question? | 2024-04-02 18:55:47.776513
+LlamaPerplexity|User| Thanks. | 2024-04-02 18:56:59.093438

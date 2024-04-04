@@ -1,0 +1,4 @@
+LlamaPerplexity|User| Okay. | 2024-04-02 17:47:15.178732
+LlamaPerplexity|Bot| Sure, I'd be happy to help you with your booking. Can you please provide me with your name and contact number? | 2024-04-02 17:47:44.940816
+LlamaPerplexity|User| Okay. | 2024-04-02 17:47:51.028353
+LlamaPerplexity|Bot| Sure, I'd be happy to help you with your booking. Can you please provide me with your name and contact number? | 2024-04-02 17:48:23.060858

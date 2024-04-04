@@ -1,0 +1,9 @@
+LlamaPerplexity|User| Okay. New. Back. One You the same expected to. Hello? | 2024-04-03 16:58:21.939555
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make a new booking? | 2024-04-03 16:58:35.463257
+LlamaPerplexity|User| Okay. | 2024-04-03 16:59:01.099740
+LlamaPerplexity|Bot| Hi there! I'm happy to help. Can you please clarify what you mean by "Okay. New. Back. One You the same expected to"? Are you looking to make a new booking or modify an existing reservation? | 2024-04-03 16:59:19.862102
+LlamaPerplexity|User| Okay. | 2024-04-03 16:59:25.579479
+LlamaPerplexity|Bot| Sure thing! Can you please provide more details about your booking request? Like the dates you're looking to stay and how many people will be joining us? That way, I can assist you further. | 2024-04-03 16:59:42.853871
+LlamaPerplexity|User| Fifty | 2024-04-03 16:59:47.448900
+LlamaPerplexity|Bot| Sure, I'd be happy to help! Based on your previous message, it seems like you're looking to make a new booking. Is that correct? Can you please provide me with the dates you're looking to stay and how many people will be joining us? That way, I can assist you further. | 2024-04-03 17:00:02.686481
+LlamaPerplexity|User| No. | 2024-04-03 17:00:07.339276

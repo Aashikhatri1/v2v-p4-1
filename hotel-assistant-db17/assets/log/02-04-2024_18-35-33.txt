@@ -1,0 +1,12 @@
+LlamaPerplexity|User| Hello? | 2024-04-02 18:35:51.788607
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel! How can I assist you today? Do you have a query or request? | 2024-04-02 18:36:09.195672
+LlamaPerplexity|User| Keys. | 2024-04-02 18:36:13.727438
+LlamaPerplexity|Bot| Sure, how can I help you today? Do you have a reservation or are you looking to make one? | 2024-04-02 18:36:23.989853
+LlamaPerplexity|User| Okay. | 2024-04-02 18:36:29.677696
+LlamaPerplexity|Bot| Sure, I can assist you with that. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-02 18:36:45.603391
+LlamaPerplexity|User| Booking. | 2024-04-02 18:36:59.357515
+LlamaPerplexity|Bot| Sure, I can assist you with booking a room. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-02 18:37:05.820414
+LlamaPerplexity|User| Okay. | 2024-04-02 18:37:10.317288
+LlamaPerplexity|Bot| Sure, I can help you with booking a room. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-02 18:37:15.006254
+LlamaPerplexity|User| Okay. | 2024-04-02 18:37:19.527635
+LlamaPerplexity|Bot| Sure, I can assist you with booking a room. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-02 18:37:30.922247

@@ -1,0 +1,6 @@
+LlamaPerplexity|User| No. | 2024-04-02 13:18:52.411717
+LlamaPerplexity|Bot| Hello! How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 13:19:01.382182
+LlamaPerplexity|User| Any check if there are any rules | 2024-04-02 13:19:10.621423
+LlamaPerplexity|Bot| Sure, here's a possible response:
+
+"Hi there! Yes, we do have some rules and regulations to ensure the comfort and safety of all our guests. For example, check-in is at 1 PM and check-out is at 11 AM. We also have a pet policy that allows pets with prior notice and a fee. Additionally, our hotel is entirely non-smoking, with designated outdoor areas for smoking. Can I help you with anything else?" | 2024-04-02 13:19:41.154095

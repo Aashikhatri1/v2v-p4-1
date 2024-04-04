@@ -1,0 +1,8 @@
+LlamaPerplexity|User|  Hello? | 2024-04-03 18:42:20.850558
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-03 18:42:35.731347
+LlamaPerplexity|User|  Hello? I have a reservation. | 2024-04-03 18:42:40.250032
+LlamaPerplexity|Bot| "Great! Can you please provide me with your reservation number or the date of your stay? That way, I can assist you further." | 2024-04-03 18:42:59.556037
+LlamaPerplexity|User|  Hello? I have a reservation. One two three. | 2024-04-03 18:43:02.919687
+LlamaPerplexity|Bot| Hi there! Great, I can see that you have a reservation. Can you please provide me with your name and contact number, so I can assist you further? | 2024-04-03 18:43:14.891305
+LlamaPerplexity|User|  Hello? I have a reservation. One two three. One two three four five six seven eight. | 2024-04-03 18:43:26.549390
+LlamaPerplexity|Bot| Hi there! Great, I can see that you have a reservation. Can you please provide me with your name and contact number, so I can assist you further? | 2024-04-03 18:43:49.304925

@@ -1,0 +1,134 @@
+LlamaPerplexity|User| No. | 2024-04-02 13:18:52.411903
+LlamaPerplexity|prompt| 
+
+  "description": "As Jacob, a Hotel receptionist, your role involves matching user queries with the most appropriate category and subcategory from a specified table. This involves categorizing queries based on hotel aspects like services, policy, attractions, and more.",
+  "categoriesTable": [
+    {"Category": "Hotel", "SubCategory": "Policy"},
+    {"Category": "Hotel", "SubCategory": "Services"},
+    {"Category": "Hotel", "SubCategory": "Attractions"},
+    {"Category": "Hotel", "SubCategory": "Check In/Check Out"},
+    {"Category": "Hotel", "SubCategory": "Accessible"},
+    {"Category": "Hotel", "SubCategory": "Fitness"},
+    {"Category": "Hotel", "SubCategory": "Restaurants/Club"},
+    {"Category": "Hotel", "SubCategory": "Parking"},
+    {"Category": "Hotel", "SubCategory": "House Keeping"},
+    {"Category": "Hotel", "SubCategory": "Transportation"},
+    {"Category": "Hotel", "SubCategory": "Reservation"},
+    {"Category": "Hotel Services", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Reservation"},
+    {"Category": "Room", "SubCategory": "Cancel/Refund"},
+    {"Category": "Room", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Room type"},
+    {"Category": "Room", "SubCategory": "Payment/offer"}
+  ],
+  responseFormat:
+    {
+    "Category": "<Category from table>",
+    "Sub Category": "<SubCategory from table>",
+    "Context Given": "Yes/No"
+  },
+  "instructions": "Respond with the most suitable category and subcategory from the table for each user query. For queries without specific context ('yes', 'thank you', etc.), use 'No' for 'Context Given'. Otherwise, use 'Yes'. Ensure no fields are left empty. Respond with the correct json format.
+  If the check in/check out date is mentioned, the  category and sub category will be 'Room' and 'Reservation' respectively."
+
+Ongoing conversation with the user is as follows: []No. | |prompt| 
+
+  "description": "As Jacob, a Hotel receptionist, your role involves matching user queries with the most appropriate category and subcategory from a specified table. This involves categorizing queries based on hotel aspects like services, policy, attractions, and more.",
+  "categoriesTable": [
+    {"Category": "Hotel", "SubCategory": "Policy"},
+    {"Category": "Hotel", "SubCategory": "Services"},
+    {"Category": "Hotel", "SubCategory": "Attractions"},
+    {"Category": "Hotel", "SubCategory": "Check In/Check Out"},
+    {"Category": "Hotel", "SubCategory": "Accessible"},
+    {"Category": "Hotel", "SubCategory": "Fitness"},
+    {"Category": "Hotel", "SubCategory": "Restaurants/Club"},
+    {"Category": "Hotel", "SubCategory": "Parking"},
+    {"Category": "Hotel", "SubCategory": "House Keeping"},
+    {"Category": "Hotel", "SubCategory": "Transportation"},
+    {"Category": "Hotel", "SubCategory": "Reservation"},
+    {"Category": "Hotel Services", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Reservation"},
+    {"Category": "Room", "SubCategory": "Cancel/Refund"},
+    {"Category": "Room", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Room type"},
+    {"Category": "Room", "SubCategory": "Payment/offer"}
+  ],
+  responseFormat:
+    {
+    "Category": "<Category from table>",
+    "Sub Category": "<SubCategory from table>",
+    "Context Given": "Yes/No"
+  },
+  "instructions": "Respond with the most suitable category and subcategory from the table for each user query. For queries without specific context ('yes', 'thank you', etc.), use 'No' for 'Context Given'. Otherwise, use 'Yes'. Ensure no fields are left empty. Respond with the correct json format.
+  If the check in/check out date is mentioned, the  category and sub category will be 'Room' and 'Reservation' respectively."
+
+Ongoing conversation with the user is as follows: []No. | |output| [['{"FillerNo": "1", "QuestionType": "FAQ"}'], ['{"Category": "No Category", "Sub Category": "No Sub Category", "Context Given": "Yes"}']] | 2024-04-02 13:18:53.851061
+LlamaPerplexity|FAQ INFO| [] | 2024-04-02 13:18:53.878622
+LlamaPerplexity|Bot| Hello! How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 13:19:01.382389
+LlamaPerplexity|User| Any check if there are any rules | 2024-04-02 13:19:10.621622
+LlamaPerplexity|prompt| 
+
+  "description": "As Jacob, a Hotel receptionist, your role involves matching user queries with the most appropriate category and subcategory from a specified table. This involves categorizing queries based on hotel aspects like services, policy, attractions, and more.",
+  "categoriesTable": [
+    {"Category": "Hotel", "SubCategory": "Policy"},
+    {"Category": "Hotel", "SubCategory": "Services"},
+    {"Category": "Hotel", "SubCategory": "Attractions"},
+    {"Category": "Hotel", "SubCategory": "Check In/Check Out"},
+    {"Category": "Hotel", "SubCategory": "Accessible"},
+    {"Category": "Hotel", "SubCategory": "Fitness"},
+    {"Category": "Hotel", "SubCategory": "Restaurants/Club"},
+    {"Category": "Hotel", "SubCategory": "Parking"},
+    {"Category": "Hotel", "SubCategory": "House Keeping"},
+    {"Category": "Hotel", "SubCategory": "Transportation"},
+    {"Category": "Hotel", "SubCategory": "Reservation"},
+    {"Category": "Hotel Services", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Reservation"},
+    {"Category": "Room", "SubCategory": "Cancel/Refund"},
+    {"Category": "Room", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Room type"},
+    {"Category": "Room", "SubCategory": "Payment/offer"}
+  ],
+  responseFormat:
+    {
+    "Category": "<Category from table>",
+    "Sub Category": "<SubCategory from table>",
+    "Context Given": "Yes/No"
+  },
+  "instructions": "Respond with the most suitable category and subcategory from the table for each user query. For queries without specific context ('yes', 'thank you', etc.), use 'No' for 'Context Given'. Otherwise, use 'Yes'. Ensure no fields are left empty. Respond with the correct json format.
+  If the check in/check out date is mentioned, the  category and sub category will be 'Room' and 'Reservation' respectively."
+
+Ongoing conversation with the user is as follows: [{'role': 'user', 'content': 'No.'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today? Do you have a reservation or are you looking to make one?'}]Any check if there are any rules | |prompt| 
+
+  "description": "As Jacob, a Hotel receptionist, your role involves matching user queries with the most appropriate category and subcategory from a specified table. This involves categorizing queries based on hotel aspects like services, policy, attractions, and more.",
+  "categoriesTable": [
+    {"Category": "Hotel", "SubCategory": "Policy"},
+    {"Category": "Hotel", "SubCategory": "Services"},
+    {"Category": "Hotel", "SubCategory": "Attractions"},
+    {"Category": "Hotel", "SubCategory": "Check In/Check Out"},
+    {"Category": "Hotel", "SubCategory": "Accessible"},
+    {"Category": "Hotel", "SubCategory": "Fitness"},
+    {"Category": "Hotel", "SubCategory": "Restaurants/Club"},
+    {"Category": "Hotel", "SubCategory": "Parking"},
+    {"Category": "Hotel", "SubCategory": "House Keeping"},
+    {"Category": "Hotel", "SubCategory": "Transportation"},
+    {"Category": "Hotel", "SubCategory": "Reservation"},
+    {"Category": "Hotel Services", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Reservation"},
+    {"Category": "Room", "SubCategory": "Cancel/Refund"},
+    {"Category": "Room", "SubCategory": "Services"},
+    {"Category": "Room", "SubCategory": "Room type"},
+    {"Category": "Room", "SubCategory": "Payment/offer"}
+  ],
+  responseFormat:
+    {
+    "Category": "<Category from table>",
+    "Sub Category": "<SubCategory from table>",
+    "Context Given": "Yes/No"
+  },
+  "instructions": "Respond with the most suitable category and subcategory from the table for each user query. For queries without specific context ('yes', 'thank you', etc.), use 'No' for 'Context Given'. Otherwise, use 'Yes'. Ensure no fields are left empty. Respond with the correct json format.
+  If the check in/check out date is mentioned, the  category and sub category will be 'Room' and 'Reservation' respectively."
+
+Ongoing conversation with the user is as follows: [{'role': 'user', 'content': 'No.'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today? Do you have a reservation or are you looking to make one?'}]Any check if there are any rules | |output| [['{"Category": "Hotel", "Sub Category": "Policy", "Context Given": "Yes"}'], ['{"FillerNo": "1", "QuestionType": "FAQ"}']] | 2024-04-02 13:19:14.314946
+LlamaPerplexity|FAQ INFO| [{'Sample Answer': 'Check-in is at 1 PM, and check-out is at 11 AM.'}, {'Sample Answer': 'Pets are welcome with prior notice and a fee of [insert fee] per stay. Would you like to know about the detailed pet policy at our hotel'}, {'Sample Answer': 'Our hotel is entirely non-smoking. Smoking is permitted in designated outdoor areas only.'}] | 2024-04-02 13:19:14.339056
+LlamaPerplexity|Bot| Sure, here's a possible response:
+
+"Hi there! Yes, we do have some rules and regulations to ensure the comfort and safety of all our guests. For example, check-in is at 1 PM and check-out is at 11 AM. We also have a pet policy that allows pets with prior notice and a fee. Additionally, our hotel is entirely non-smoking, with designated outdoor areas for smoking. Can I help you with anything else?" | 2024-04-02 13:19:41.154334

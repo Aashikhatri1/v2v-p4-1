@@ -1,0 +1,2 @@
+LlamaPerplexity|User|  Hello. Welcome to Urban retreat hotel. How may I assist you today? Is there any hotels for today? | 2024-04-03 23:09:42.003069
+LlamaPerplexity|Bot| Hi there! Yes, we have availability for today. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-03 23:09:58.497649

@@ -1,0 +1,8 @@
+LlamaPerplexity|User|  Is there any hotel available for today? | 2024-04-03 22:33:26.682702
+LlamaPerplexity|Bot| Sure, we have availability for today. Can you please provide me with your check-in and check-out dates? Additionally, may I have your name and contact number, please? | 2024-04-03 22:33:41.915283
+LlamaPerplexity|User|  Is there any hotel available for today? Checking date is student tomorrow is check it. | 2024-04-03 22:33:50.118118
+LlamaPerplexity|Bot| Sure, we have availability for today. However, I noticed that you didn't provide your check-out date. Can you please let me know your check-out date? Additionally, may I have your name and contact number, please? | 2024-04-03 22:34:09.439514
+LlamaPerplexity|User|  Is there any hotel available for today? Checking date is student tomorrow is check it. Check out it is tomorrow. | 2024-04-03 22:34:15.376930
+LlamaPerplexity|Bot| Sure, we have availability for today. However, I noticed that you didn't provide your number of guests. Can you please let me know how many guests will be checking in? Additionally, may I have your name and contact number, please? | 2024-04-03 22:34:33.542616
+LlamaPerplexity|User|  Is there any hotel available for today? Checking date is student tomorrow is check it. Check out it is tomorrow. There are only two guest. | 2024-04-03 22:34:40.627398
+LlamaPerplexity|Bot| Sure, we have availability for today. However, I noticed that you didn't provide your number of guests. Can you please let me know how many guests will be checking in? Additionally, may I have your name and contact number, please? | 2024-04-03 22:35:01.248643

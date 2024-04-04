@@ -1,0 +1,8 @@
+LlamaPerplexity|User| Is there any rooms available for? | 2024-04-03 17:29:30.169292
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question or provide more information? | 2024-04-03 17:29:42.311634
+LlamaPerplexity|User| Is there any available? | 2024-04-03 17:29:52.649686
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question or provide more information? Also, may I know how many guests will be checking in? | 2024-04-03 17:30:05.649503
+LlamaPerplexity|User| Any room available form. Next weekend. | 2024-04-03 17:30:13.779516
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question or provide more information? Also, may I know how many guests will be checking in? | 2024-04-03 17:30:27.048450
+LlamaPerplexity|User| There any rooms available for next weekend. | 2024-04-03 17:31:39.468486
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat your question or provide more information? Also, may I know how many guests will be checking in? | 2024-04-03 17:31:54.774692

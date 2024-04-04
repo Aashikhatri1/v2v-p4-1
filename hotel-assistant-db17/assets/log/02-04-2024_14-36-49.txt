@@ -1,0 +1,6 @@
+LlamaPerplexity|User| Hello. | 2024-04-02 14:36:58.132499
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 14:37:20.805203
+LlamaPerplexity|User| Okay. | 2024-04-02 14:37:41.802037
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 14:37:47.125456
+LlamaPerplexity|User| Okay. | 2024-04-02 14:37:52.912447
+LlamaPerplexity|Bot| Sure thing! How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 14:38:02.303808

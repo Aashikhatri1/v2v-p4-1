@@ -1,0 +1,10 @@
+LlamaPerplexity|User| Hello? | 2024-04-02 13:09:27.129700
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 13:09:41.821291
+LlamaPerplexity|User| I'm looking to make on. | 2024-04-02 13:09:48.709662
+LlamaPerplexity|Bot| Sure, I'd be happy to help you with that! Can you please provide me with some more information? How many guests will be staying, and what are your check-in and check-out dates? | 2024-04-02 13:10:02.385797
+LlamaPerplexity|User| Okay. | 2024-04-02 13:10:06.989466
+LlamaPerplexity|Bot| Sure, no problem! Can you please provide me with your check-in and check-out dates? And how many guests will be staying? | 2024-04-02 13:10:17.860716
+LlamaPerplexity|User| Okay. | 2024-04-02 13:10:22.448461
+LlamaPerplexity|Bot| Sure, no problem! Can you please provide me with your check-in and check-out dates? And how many guests will be staying? | 2024-04-02 13:10:26.894376
+LlamaPerplexity|User| Okay. | 2024-04-02 13:11:00.307457
+LlamaPerplexity|Bot| Sure, no problem! Can you please provide me with your check-in and check-out dates? And how many guests will be staying? | 2024-04-02 13:11:04.169670

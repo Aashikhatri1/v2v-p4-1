@@ -1,0 +1,4 @@
+LlamaPerplexity|User| Can you is telling is where any rooms available for next weekend. | 2024-04-02 20:53:07.700839
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with some more information such as the number of guests and the dates you are looking to book? | 2024-04-02 20:53:47.406758
+LlamaPerplexity|User| Wait. | 2024-04-02 21:02:03.911127
+LlamaPerplexity|Bot| Sure, no problem! Can you please provide me with the check-in and check-out dates you're interested in? And how many guests will be staying with us? | 2024-04-02 21:02:33.024943

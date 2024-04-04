@@ -1,0 +1,6 @@
+LlamaPerplexity|User| Okay. | 2024-04-02 15:55:09.095980
+LlamaPerplexity|Bot| "Great! Can you please provide me with your name and contact number so I can book a room for you?" | 2024-04-02 15:55:32.443397
+LlamaPerplexity|User| Okay. | 2024-04-02 15:55:40.524724
+LlamaPerplexity|Bot| Great! Can you please provide me with your name and contact number so I can book a room for you? | 2024-04-02 15:55:49.048745
+LlamaPerplexity|User| Okay. | 2024-04-02 15:55:58.293377
+LlamaPerplexity|Bot| Great! Can you please provide me with your name and contact number so I can book a room for you? | 2024-04-02 15:56:05.076882

@@ -1,0 +1,22 @@
+LlamaPerplexity|User| Hello? Hello Hello? | 2024-04-02 12:55:39.960882
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 12:55:55.863875
+LlamaPerplexity|User| Hello? | 2024-04-02 12:56:32.051294
+LlamaPerplexity|Bot| Hi there! I'm the receptionist. How can I help you today? Do you have a reservation or are you looking to make one? | 2024-04-02 12:56:44.845247
+LlamaPerplexity|User| Is there any available? | 2024-04-02 12:57:13.816500
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with some more information? How many guests will be staying, and what are your check-in and check-out dates? | 2024-04-02 12:57:34.964822
+LlamaPerplexity|User| Yes. | 2024-04-02 12:57:40.716939
+LlamaPerplexity|Bot| Great! I'd be happy to help you with a room reservation. Can you please provide me with your check-in and check-out dates? | 2024-04-02 12:57:54.349530
+LlamaPerplexity|User| Checking the tenth of nine checkout. | 2024-04-02 12:58:03.527453
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with your check-in date and number of guests? | 2024-04-02 12:58:15.996387
+LlamaPerplexity|User| Get | 2024-04-02 12:58:24.002746
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with your check-in date and number of guests? | 2024-04-02 12:58:32.728382
+LlamaPerplexity|User| Hello? | 2024-04-02 12:59:28.055126
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Do you have a query about room availability or something else? | 2024-04-02 12:59:37.795243
+LlamaPerplexity|User| I need a single room. | 2024-04-02 12:59:46.924695
+LlamaPerplexity|Bot| Great! I just need a few more details to complete your booking. Can you please provide me with your check-in date? | 2024-04-02 13:00:07.255116
+LlamaPerplexity|User| End enter. | 2024-04-02 13:00:14.177606
+LlamaPerplexity|Bot| Hi there! I'm just a receptionist, I saw that you were inquiring about room availability. Can you please provide me with your check-in date and the number of guests? That way, I can assist you better. | 2024-04-02 13:00:37.504666
+LlamaPerplexity|User| Hello? | 2024-04-02 13:02:24.999610
+LlamaPerplexity|Bot| Hi there! I'm just a receptionist, I saw that you were inquiring about room availability. Can you please provide me with your check-in date and the number of guests? That way, I can assist you better. | 2024-04-02 13:02:28.857820
+LlamaPerplexity|User| May won't be. | 2024-04-02 13:03:29.879269
+LlamaPerplexity|Bot| Sure, I'd be happy to help! Based on the chat history, it seems like the user is looking to book a single room for a check-in date of September 10th. Is that correct? | 2024-04-02 13:03:44.441112

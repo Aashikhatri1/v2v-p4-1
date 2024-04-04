@@ -1,0 +1,3 @@
+LlamaPerplexity|User| Hello? | 2024-04-02 17:32:27.862029
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-02 17:32:50.824215
+LlamaPerplexity|User| Fourteen. | 2024-04-02 17:32:54.881222

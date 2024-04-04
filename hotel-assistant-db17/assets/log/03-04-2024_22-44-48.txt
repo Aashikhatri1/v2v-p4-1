@@ -1,0 +1,6 @@
+LlamaPerplexity|User|  Hello. Welcome to Urban retreat hotel. How may I assist you today? | 2024-04-03 22:44:56.051230
+LlamaPerplexity|Bot| Hi there! I'm looking for a room with a nice view. Do you have any recommendations? | 2024-04-03 22:45:08.914149
+LlamaPerplexity|User| Hello. Welcome to Urban retreat hotel. How may I assist you today? Hello? And | 2024-04-03 22:45:20.784519
+LlamaPerplexity|Bot| Hi there! I'm looking for a room with a nice view. Do you have any recommendations? Sure, we have a few options with great views. Would you like me to recommend a specific room type or floor? | 2024-04-03 22:45:38.147584
+LlamaPerplexity|User| Hello? And Is there any hotels available for me next weekend? | 2024-04-03 22:45:53.481032
+LlamaPerplexity|Bot| Hello! Yes, we have availability for next weekend. Can you please provide me with some more information such as the number of guests, check-in and check-out dates, and preferred room type? | 2024-04-03 22:46:12.839853

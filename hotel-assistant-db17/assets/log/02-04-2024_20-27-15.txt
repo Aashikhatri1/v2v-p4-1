@@ -1,0 +1,3 @@
+LlamaPerplexity|User| Four next week | 2024-04-02 20:27:43.627424
+LlamaPerplexity|Bot| "Sure, I can help you with that. Can you please provide me with your check-in and check-out dates? And also, can you please repeat what you said about the rooms?" | 2024-04-02 20:28:19.134478
+LlamaPerplexity|User| No. | 2024-04-02 20:28:26.792094

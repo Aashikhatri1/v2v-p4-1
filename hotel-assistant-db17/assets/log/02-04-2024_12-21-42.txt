@@ -1,0 +1,21 @@
+LlamaPerplexity|User| Any check us there any room level? | 2024-04-02 12:21:54.790749
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat your question or provide more context? | 2024-04-02 12:22:11.525344
+LlamaPerplexity|User| Hello | 2024-04-02 12:22:17.290253
+LlamaPerplexity|Bot| Hi there! Sorry about that, I'm here to help now. Yes, we have different room levels available. Would you like me to list them for you? | 2024-04-02 12:22:39.271761
+LlamaPerplexity|User| Meeting | 2024-04-02 12:23:43.468788
+LlamaPerplexity|Bot| Sure, here are the available room levels:
+
+* Standard Room
+* Deluxe Room
+* Executive Room
+* Suite
+
+Would you like me to list the amenities for each room level? | 2024-04-02 12:23:58.861807
+LlamaPerplexity|User| Can you check there any rooms available? | 2024-04-02 12:24:18.597899
+LlamaPerplexity|Bot| Sure, I can check for available rooms. Can you please provide me with some more information such as the number of guests, check-in date, and check-out date? | 2024-04-02 12:24:41.480011
+LlamaPerplexity|User| Ten to upgrade. | 2024-04-02 12:24:55.437545
+LlamaPerplexity|Bot| Sure, I can assist you with that. Can you please provide me with your check-in and check-out dates? Additionally, could you please let me know how many guests will be occupying the room? | 2024-04-02 12:25:09.036608
+LlamaPerplexity|User| Okay in tenth of our april. Checking date. | 2024-04-02 12:25:17.107256
+LlamaPerplexity|Bot| Sure, I can assist you with that. Can you please provide me with the number of guests who will be occupying the room? Additionally, could you please confirm your check-out date? | 2024-04-02 12:25:31.961183
+LlamaPerplexity|User| Okay understand You check details offer ten. | 2024-04-02 12:25:42.416879
+LlamaPerplexity|Bot| Sure, I can assist you with that. Based on your previous inquiry, I understand that you're interested in booking a room for April 10th. Can you please provide me with the number of guests and the check-out date? That way, I can check for availability and proceed with the booking. | 2024-04-02 12:25:59.866001

@@ -1,0 +1,4 @@
+LlamaPerplexity|User| Hello. Hello? Hello? Hello Hello? Hello. My | 2024-04-02 20:13:38.822707
+LlamaPerplexity|Bot| Hello! Sorry about that, I'm here now. How can I assist you today? | 2024-04-02 20:13:52.827444
+LlamaPerplexity|User| Is there any room available? | 2024-04-02 20:14:01.309391
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you repeat your question, please? | 2024-04-02 20:14:35.597682

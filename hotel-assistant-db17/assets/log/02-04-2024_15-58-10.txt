@@ -1,0 +1,26 @@
+LlamaPerplexity|User| Okay. | 2024-04-02 15:58:28.920312
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Are you looking for a room reservation or do you have a query about our services? | 2024-04-02 15:58:43.909020
+LlamaPerplexity|User| Okay. | 2024-04-02 15:58:57.860042
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Are you looking for a room reservation or do you have a query about our services? | 2024-04-02 15:59:00.606397
+LlamaPerplexity|User| Hello. | 2024-04-02 17:16:36.914691
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. Can I help you with a room reservation or answer any questions you may have about our services? | 2024-04-02 17:16:49.542308
+LlamaPerplexity|User| Hello? | 2024-04-02 17:17:19.764821
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. Can I help you with a room reservation or answer any questions you may have about our services? | 2024-04-02 17:17:26.734644
+LlamaPerplexity|User| Hello? | 2024-04-02 17:19:47.439010
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. Can I help you with a room reservation or answer any questions you may have about our services? | 2024-04-02 17:19:57.332724
+LlamaPerplexity|User| Hello. | 2024-04-02 17:21:50.666768
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. Can I help you with a room reservation or answer any questions you may have about our services? | 2024-04-02 17:21:55.645155
+LlamaPerplexity|User| Hello? | 2024-04-02 17:23:07.556196
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Do you have a reservation or do you have any questions about our hotel services? | 2024-04-02 17:23:30.304897
+LlamaPerplexity|User| Hello? | 2024-04-02 17:32:26.740566
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Do you have a reservation or do you have any questions about our hotel services? | 2024-04-02 17:32:31.106485
+LlamaPerplexity|User| Hello. | 2024-04-02 17:32:41.861357
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Do you have a reservation or do you have any questions about our hotel services? | 2024-04-02 17:32:50.725495
+LlamaPerplexity|User| Okay. | 2024-04-02 17:32:57.791360
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Do you have a reservation or do you have any questions about our hotel services? | 2024-04-02 17:33:13.004226
+LlamaPerplexity|User| Okay. | 2024-04-02 17:33:24.517190
+LlamaPerplexity|Bot| Hi there! How can I assist you today? Do you have a reservation or do you have any questions about our hotel services? | 2024-04-02 17:33:35.751155
+LlamaPerplexity|User| Okay | 2024-04-02 17:34:23.136186
+LlamaPerplexity|Bot| Hello! How can I assist you today? Do you have any questions about our hotel services or would you like to make a reservation? | 2024-04-02 17:34:33.334240
+LlamaPerplexity|User| Okay. | 2024-04-02 17:35:06.434346
+LlamaPerplexity|Bot| Hi there! I'm the receptionist of this hotel. How can I assist you today? Do you have any questions about our services or would you like to make a reservation? | 2024-04-02 17:35:29.376993

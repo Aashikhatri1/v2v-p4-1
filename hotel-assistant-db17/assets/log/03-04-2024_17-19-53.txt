@@ -1,0 +1,21 @@
+LlamaPerplexity|User| Hello? | 2024-04-03 17:20:02.266101
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-03 17:20:16.495610
+LlamaPerplexity|User| I'm looking to make. | 2024-04-03 17:20:24.565284
+LlamaPerplexity|Bot| Sure, I'd be happy to help you with that! Can you please provide me with some more information such as your check-in and check-out dates, and the number of guests? That way, I can give you a list of available rooms and their rates. | 2024-04-03 17:20:40.755294
+LlamaPerplexity|User| Okay. | 2024-04-03 17:20:45.345497
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with your check-in and check-out dates, and the number of guests? That way, I can give you a list of available rooms and their rates. | 2024-04-03 17:20:59.273209
+LlamaPerplexity|User| Okay. | 2024-04-03 17:21:03.865133
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with your check-in and check-out dates, and the number of guests? That way, I can give you a list of available rooms and their rates. | 2024-04-03 17:21:18.512945
+LlamaPerplexity|User| Okay. | 2024-04-03 17:21:21.964908
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with your check-in and check-out dates, and the number of guests? That way, I can give you a list of available rooms and their rates. | 2024-04-03 17:21:36.107938
+LlamaPerplexity|User| Checking the twelfth of Finland checks out a twelfth, | 2024-04-03 17:21:49.994710
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Can you please repeat or rephrase your question? | 2024-04-03 17:21:58.942007
+LlamaPerplexity|User| Ten to thirty. | 2024-04-03 17:22:12.895311
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat or rephrase it? | 2024-04-03 17:22:26.058195
+LlamaPerplexity|User| Twenty two twenty two. | 2024-04-03 17:22:30.633981
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat or rephrase it? Also, may I know the number of guests accompanying you? | 2024-04-03 17:22:44.299116
+LlamaPerplexity|User| Hello. | 2024-04-03 17:23:44.843878
+LlamaPerplexity|Bot| Hi there! I'm the receptionist at our hotel. I understand you're looking to book a room, but I'm having trouble understanding your query. Could you please provide me with the check-in and check-out dates, as well as the number of guests accompanying you? That way, I can give you the available rooms and rates. | 2024-04-03 17:24:08.771630
+LlamaPerplexity|User| Check date is twenty twenty two. | 2024-04-03 17:24:16.903701
+LlamaPerplexity|Bot| Sorry, I didn't understand your query. Could you please repeat or rephrase it? Also, may I know the number of guests accompanying you? | 2024-04-03 17:24:29.306004
+LlamaPerplexity|User| No number of guest. | 2024-04-03 17:24:35.104005

@@ -1,0 +1,8 @@
+LlamaPerplexity|User|  Hello. Welcome to hotel. How may I assist you today? Hello? | 2024-04-03 18:29:06.053650
+LlamaPerplexity|Bot| Hi there! I'm looking for a room for tonight. Do you have any availability? | 2024-04-03 18:29:15.191225
+LlamaPerplexity|User|  Fan looking forward on this. | 2024-04-03 18:29:33.965621
+LlamaPerplexity|Bot| Sure thing! I'd be happy to help you with that. Can you please repeat what you just said? I want to make sure I understand your request correctly. | 2024-04-03 18:29:47.135684
+LlamaPerplexity|User|  Is there any room available for today? | 2024-04-03 18:30:08.045325
+LlamaPerplexity|Bot| Sure, I'd be happy to help! Can you please provide me with some more information? Do you have a preferred room type or any specific requests? | 2024-04-03 18:30:22.064883
+LlamaPerplexity|User|  Is there any rooms available for today? | 2024-04-03 18:30:30.161205
+LlamaPerplexity|Bot| Sure, I'd be happy to help! Can you please provide me with some more information? Do you have a preferred room type or any specific requests? | 2024-04-03 18:30:42.425105
