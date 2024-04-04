@@ -148,12 +148,11 @@ def transcribe_stream(chat_history):
 
     print("Start speaking...")
     transcriber = Transcriber()
-    
+    sd.stop()
     loop = asyncio.get_event_loop()
     transcript = loop.run_until_complete(transcriber.run(DEEPGRAM_API_KEY))
     current_transcript =  transcript
     transcript = last_transcript + " " + transcript
-    sd.stop()
     # Store the current transcript as the last transcript
     last_transcript = current_transcript
     # Wait for the background task to complete
