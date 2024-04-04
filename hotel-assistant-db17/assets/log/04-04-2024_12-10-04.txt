@@ -1,0 +1,4 @@
+LlamaPerplexity|User|  Hello. | 2024-04-04 12:10:31.315489
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-04 12:10:44.133703
+LlamaPerplexity|User| Hello. I accept email by. | 2024-04-04 12:19:01.090469
+LlamaPerplexity|Bot| Sure, I can help you with that. Can you please provide me with your email address? | 2024-04-04 12:19:10.145371
