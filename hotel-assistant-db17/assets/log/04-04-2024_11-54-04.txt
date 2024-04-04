@@ -1,0 +1,6 @@
+LlamaPerplexity|User|  Who | 2024-04-04 11:55:34.729183
+LlamaPerplexity|Bot| Hi there! Welcome to our hotel. How can I assist you today? Do you have a reservation or are you looking to make one? | 2024-04-04 11:55:51.697397
+LlamaPerplexity|User| Who Hello. Hello hello. | 2024-04-04 11:56:44.038035
+LlamaPerplexity|Bot| Assistant response: Hi there! Sorry about that, it seems like we got cut off. Can you please repeat your query or request? | 2024-04-04 11:56:55.392388
+LlamaPerplexity|User| Hello. Hello hello. Hello? | 2024-04-04 11:57:02.319263
+LlamaPerplexity|Bot| Hi there! Sorry about the confusion earlier. Can you please repeat your query or request? Are you looking to make a reservation or do you have a question about an existing reservation? | 2024-04-04 11:57:15.821297

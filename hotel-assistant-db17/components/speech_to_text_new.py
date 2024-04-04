@@ -10,7 +10,7 @@ import pyautogui as pg
 import threading
 import queue  
 import sys
-
+import sounddevice as sd
 sys.path.append('./components')
 from part2_new import summarise_chat_history
 
@@ -153,6 +153,7 @@ def transcribe_stream(chat_history):
     transcript = loop.run_until_complete(transcriber.run(DEEPGRAM_API_KEY))
     current_transcript =  transcript
     transcript = last_transcript + " " + transcript
+    sd.stop()
     # Store the current transcript as the last transcript
     last_transcript = current_transcript
     # Wait for the background task to complete
