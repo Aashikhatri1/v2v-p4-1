@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    chat_with_user()
+  File "main.py", line 64, in chat_with_user
+    filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db14\./components\playFiles.py", line 32, in playAudioFile
+    filler_no, Category, Sub_Category, QuestionType = getjson(answer)
+  File "E:\Techhelps\v2v-p4-1_new\hotel-assistant-db14\./components\playFiles.py", line 11, in getjson
+    category_dict = json.loads(item[0].replace('\n', ''))
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+####################################################################
+
+Get missing info from user
+chat_user_info:  {'check in date': '2023-04-11', 'check out date': 'N/A', 'number of rooms': 'N/A'}
+missing_info:  {'check out date': 'N/A', 'number of rooms': 'N/A'}
+content Based on the user query, the following information is required from the client:
+{'number of rooms': '1', 'check in date': 'N/A', 'check out date': 'N/A'}
+However, the user has provided some information, so the final dictionary is:
+{'number of rooms': '1', 'check in date': 'N/A', 'check out date': 'N/A', 'number of guests': '2'}
+Traceback (most recent call last):
+  File "main.py", line 98, in <module>
+    chat_with_user()
+  File "main.py", line 94, in chat_with_user
+    chat_history, chat_user_info = part2_new.response_type(query, category, chat_history, output_filename, chat_user_info)
+{'number of rooms': '1', 'check in date': 'N/A', 'check out date': 'N/A', 'number of guests': '2'}
+Traceback (most recent call last):
+  File "main.py", line 98, in <module>
+    chat_with_user()
+  File "main.py", line 94, in chat_with_user
+    chat_history, chat_user_info = part2_new.response_type(query, category, chat_history, output_filename, chat_user_info)
+  File "E:\Techhelps\v2v-p4-1_new_1\hotel-assistant-db16\./components\part2_new.py", line 517, in response_type
+    user_info = get_user_info(info, chat_history, query, get_user_info_prompt)
+  File "E:\Techhelps\v2v-p4-1_new_1\hotel-assistant-db16\./components\part2_new.py", line 279, in get_user_info
+    matches = json.loads(matches[0])
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\LENOVO\anaconda3\envs\aenv\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+
+
+##########################################3
+
+9.988381
+category_filler: [[{'Category': 'Room', 'Sub Category': 'Reservation', 'Context Given': 'Yes'}], [{'FillerNo': '3', 'QuestionType': 'DB'}]]
+Processing text to extract details...
+Traceback (most recent call last):
+  File "main.py", line 98, in <module>
+    chat_with_user()
+  File "main.py", line 67, in chat_with_user
+    filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
+  File "E:\Techhelps\v2v-p4-1_new_1\hotel-assistant-db17\./components\playFiles.py", line 32, in playAudioFile
+    filler_no, Category, Sub_Category, QuestionType = getjson(answer)
+  File "E:\Techhelps\v2v-p4-1_new_1\hotel-assistant-db17\./components\playFiles.py", line 11, in getjson
+    category_dict = json.loads(item[0].replace('\n', ''))
+AttributeError: 'dict' object has no attribute 'replace'
+
+###############################333
+
+
+This is because the user is asking to book a room, which falls under the "Room" category, and specifying a date (April 11th) indicates a reservation, which falls under the "Reservation" subcategory.
+result {'Category': 'Room', 'Sub Category': 'Reservation', 'Context Given': 'Yes'}
+{'Category': 'Room', 'Sub Category': 'Reservation', 'Context Given': 'Yes'}
+content {"FillerNo": "4", "QuestionType": "DB"}
+
+Let me check that for you. I'll need to verify the availability of rooms for the eleventh of April.
+result {'FillerNo': '4', 'QuestionType': 'DB'}
+{'FillerNo': '4', 'QuestionType': 'DB'}
+27.269899
+category_filler: [{'Category': 'Room', 'Sub Category': 'Reservation', 'Context Given': 'Yes'}, {'FillerNo': '4', 'QuestionType': 'DB'}]
+Processing text to extract details...
+Traceback (most recent call last):
+  File "main.py", line 98, in <module>
+    chat_with_user()
+  File "main.py", line 67, in chat_with_user
+    filler_no, Category, Sub_Category, QuestionType = playAudioFile(category_filler)
+  File "E:\Techhelps\v2v-p4-1_new_1\hotel-assistant-db17\./components\playFiles.py", line 32, in playAudioFile
+    filler_no, Category, Sub_Category, QuestionType = getjson(answer)
+  File "E:\Techhelps\v2v-p4-1_new_1\hotel-assistant-db17\./components\playFiles.py", line 11, in getjson
+    category_dict = json.loads(item[0].replace('\n', ''))
+KeyError: 0
