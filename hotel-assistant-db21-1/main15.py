@@ -392,6 +392,7 @@ stop_pushing = False  # This flag will control the running tasks.
 async def check_call_end_periodically(check_interval=1):
     """Periodically check for the call end button and stop tasks if the end call button is found."""
     global stop_pushing
+    await asyncio.sleep(5)
     while not stop_pushing:
         end_call = pg.locateOnScreen("assets/buttons/end_call.png", confidence=0.98)
         if end_call:
