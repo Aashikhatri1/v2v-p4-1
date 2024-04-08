@@ -433,7 +433,7 @@ async def main():
 
 
 # if __name__ == "__main__":
-def cover():
+def chat_with_user():
     try:
         asyncio.get_event_loop().run_until_complete(main())
         print("Done!")
@@ -446,5 +446,5 @@ def cover():
         loop.run_until_complete(main())
 
 
-cover()
-print('End of the program')
+# cover()
+# print('End of the program')
