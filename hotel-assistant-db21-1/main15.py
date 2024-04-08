@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 import pyautogui as pg
 import os
 import sys
-
+import sounddevice as sd
+import soundfile as sf
 from datetime import datetime
 
 
@@ -435,6 +436,9 @@ async def main():
 # if __name__ == "__main__":
 def chat_with_user():
     try:
+        filename = "assets/intro.wav"
+        data, fs = sf.read(filename)
+        sd.play(data, fs)
         asyncio.get_event_loop().run_until_complete(main())
         print("Done!")
         
