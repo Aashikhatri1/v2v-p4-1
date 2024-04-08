@@ -119,8 +119,13 @@ class Transcriber:
                     .get("alternatives", [{}])[0]
                     .get("transcript", "")
                 )
-                if transcript.strip() and self.on_transcript:
-                    await self.on_transcript(transcript.strip())
+                if transcript.strip():
+                    # Append the current transcript to the full transcript
+                    full_transcript += transcript + " "
+                if res.get("speech_final"):
+                    # If the message is marked as speech_final, return the full transcript
+                    if full_transcript.strip():
+                        return full_transcript.strip()
         except websockets.exceptions.ConnectionClosedError as e:
             print(f"WebSocket connection closed unexpectedly in receiver: {e}")
             if "1011" in str(e):
