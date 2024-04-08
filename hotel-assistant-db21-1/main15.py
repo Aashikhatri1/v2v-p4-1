@@ -31,7 +31,7 @@ create_db_query_prompt = prompts.create_db_query_prompt
 
 from part2 import process_db_query, fetch_sub_category, find_information_all, find_information, find_information_db, final_sub_sub_category, get_user_info, summarise_chat_history, check_room_availability, create_db_query, filter_by_dates
 
-from stt14 import Transcriber
+from stt15 import Transcriber
 from log import print_and_save
 import sounddevice as sd
 import soundfile as sf
