@@ -437,6 +437,8 @@ async def main():
 
 # if __name__ == "__main__":
 def chat_with_user():
+    global stop_pushing
+    stop_pushing = False
     try:
         filename = "assets/intro.wav"
         data, fs = sf.read(filename)
