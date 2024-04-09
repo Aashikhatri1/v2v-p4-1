@@ -179,7 +179,15 @@ async def handle_gpt_response(full_content):
                 play_audio_from_text(sentence)
                 
                 print('Call ended from our side.')
-                pg.click('assets/buttons/end_call.png')
+                self_end_call = pg.locateOnScreen('assets/buttons/self_end_call.png', confidence = 0.98)
+                if self_end_call:
+                    pg.click(self_end_call)
+                    pg.mouseDown()
+                    time.sleep(0.1)  # Short delay to simulate a real click
+                    pg.mouseUp()
+                else:
+                    print('self_end_call button not found')
+                
                 return
             else:
                 play_audio_from_text(sentence)
