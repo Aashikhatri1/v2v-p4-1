@@ -756,5 +756,5 @@ def chat_with_user():
         loop.run_until_complete(main())
 
 
-chat_with_user()
+#chat_with_user()
 # print('End of the program')
