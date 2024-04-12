@@ -1,0 +1,2 @@
+"role": "user", "content": "
+Twelfth of April.", "role": "assistant", "content": Sure, I'd be happy to help you with that! Can you please provide me with some more information? How many guests will be staying in the room, and what is your check-out date?
