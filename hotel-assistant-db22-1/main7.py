@@ -738,5 +738,5 @@ def chat_with_user():
         print(f"Error in main function: {str(e)}")
 
 
-chat_with_user()
+# chat_with_user()
 # print('End of the program')
